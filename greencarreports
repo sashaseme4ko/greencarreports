@@ -1,0 +1,1161 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"fcb635eb66",applicationID:"135926744"};;/*! For license information please see nr-loader-rum-1.236.0.min.js.LICENSE.txt */
+(()=>{"use strict";var e,t,n={5763:(e,t,n)=>{n.d(t,{P_:()=>f,Mt:()=>p,C5:()=>s,DL:()=>m,OP:()=>_,lF:()=>E,Yu:()=>y,Dg:()=>g,CX:()=>c,GE:()=>b,sU:()=>j});var r=n(8632),i=n(9567);const o={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o),(0,r.Qy)(e,a[e],"info")}var d=n(7056);const u=()=>{const e={blockSelector:"[data-nr-block]",maskInputOptions:{password:!0}};return{allow_bfcache:!0,privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,enabled:!0,harvestTimeSeconds:10},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10},metrics:{enabled:!0},page_action:{enabled:!0,harvestTimeSeconds:30},page_view_event:{enabled:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1},session_trace:{enabled:!0,harvestTimeSeconds:10},harvest:{tooManyRequestsDelay:60},session_replay:{enabled:!1,harvestTimeSeconds:60,sampleRate:.1,errorSampleRate:.1,maskTextSelector:"*",maskAllInputs:!0,get blockClass(){return"nr-block"},get ignoreClass(){return"nr-ignore"},get maskTextClass(){return"nr-mask"},get blockSelector(){return e.blockSelector},set blockSelector(t){e.blockSelector+=",".concat(t)},get maskInputOptions(){return e.maskInputOptions},set maskInputOptions(t){e.maskInputOptions={...t,password:!0}}},spa:{enabled:!0,harvestTimeSeconds:10}}},l={};function f(e){if(!e)throw new Error("All configuration objects require an agent identifier!");if(!l[e])throw new Error("Configuration for ".concat(e," was never set"));return l[e]}function g(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");l[e]=(0,i.D)(t,u()),(0,r.Qy)(e,l[e],"config")}function p(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");var n=f(e);if(n){for(var r=t.split("."),i=0;i<r.length-1;i++)if("object"!=typeof(n=n[r[i]]))return;n=n[r[r.length-1]]}return n}const h={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},v={};function m(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!v[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return v[e]}function b(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");v[e]=(0,i.D)(t,h),(0,r.Qy)(e,v[e],"loader_config")}const y=(0,r.mF)().o;var w=n(385),A=n(6818);const x={buildEnv:A.Re,bytesSent:{},queryBytesSent:{},customTransaction:void 0,disabled:!1,distMethod:A.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(w._A?.performance?.timeOrigin||w._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+w._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof w._A.XMLHttpRequest?.prototype?.addEventListener,version:A.q4},D={};function _(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!D[e])throw new Error("Runtime for ".concat(e," was never set"));return D[e]}function j(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");D[e]=(0,i.D)(t,x),(0,r.Qy)(e,D[e],"runtime")}function E(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,n)=>{n.d(t,{D:()=>i});var r=n(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,r.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,r.Z)("Setting a Configurable requires a model to set its initial properties");const n=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(n).length?e:n;for(let a in o)if(void 0!==e[a])try{"object"==typeof e[a]&&"object"==typeof t[a]?n[a]=i(e[a],t[a]):n[a]=e[a]}catch(e){(0,r.Z)("An error occurred while setting a property of a Configurable",e)}return n}catch(e){(0,r.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,n)=>{n.d(t,{Re:()=>i,gF:()=>o,q4:()=>r});const r="1.236.0",i="PROD",o="CDN"},385:(e,t,n)=>{n.d(t,{FN:()=>a,IF:()=>d,Nk:()=>l,Tt:()=>s,_A:()=>o,il:()=>r,pL:()=>c,v6:()=>i,w1:()=>u});const r="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=r?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=""+o?.location,s=/iPad|iPhone|iPod/.test(navigator.userAgent),c=s&&"undefined"==typeof SharedWorker,d=(()=>{const e=navigator.userAgent.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),u=Boolean(r&&window.document.documentMode),l=!!navigator.sendBeacon},1117:(e,t,n)=>{n.d(t,{w:()=>o});var r=n(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,r.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,n]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=n)}))}catch(e){(0,r.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,n)=>{n.d(t,{L:()=>u,R:()=>c});var r=n(2177),i=n(1284),o=n(4322),a=n(3325);const s={};function c(e,t){const n={staged:!1,priority:a.p[t]||0};d(e),s[e].get(t)||s[e].set(t,n)}function d(e){e&&(s[e]||(s[e]=new Map))}function u(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(d(e),!e||!s[e].get(t))return a(t);s[e].get(t).staged=!0;const n=[...s[e]];function a(t){const n=e?r.ee.get(e):r.ee,a=o.X.handlers;if(n.backlog&&a){var s=n.backlog[t],c=a[t];if(c){for(var d=0;s&&d<s.length;++d)l(s[d],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,n){n[0].on(e,n[1])}))}))}delete a[t],n.backlog[t]=null,n.emit("drain-"+t,[])}}n.every((e=>{let[t,n]=e;return n.staged}))&&(n.sort(((e,t)=>e[1].priority-t[1].priority)),n.forEach((e=>{let[t]=e;a(t)})))}function l(e,t){var n=e[1];(0,i.D)(t[n],(function(t,n){var r=e[0];if(n[0]===r){var i=n[1],o=e[3],a=e[2];i.apply(o,a)}}))}},2177:(e,t,n)=>{n.d(t,{ee:()=>d});var r=n(8632),i=n(2210),o=n(1284),a=n(5763),s="nr@context";let c=(0,r.fP)();var d;function u(){}function l(){return new u}function f(){d.aborted=!0,d.backlog={}}c.ee?d=c.ee:(d=function e(t,n){var r={},c={},g={},p=!1;try{p=16===n.length&&(0,a.OP)(n).isolatedBacklog}catch(e){}var h={on:b,addEventListener:b,removeEventListener:y,emit:m,get:A,listeners:w,context:v,buffer:x,abort:f,aborted:!1,isBuffering:D,debugId:n,backlog:p?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return h;function v(e){return e&&e instanceof u?e:e?(0,i.X)(e,s,l):l()}function m(e,n,r,i,o){if(!1!==o&&(o=!0),!d.aborted||i){t&&o&&t.emit(e,n,r);for(var a=v(r),s=w(e),u=s.length,l=0;l<u;l++)s[l].apply(a,n);var f=_()[c[e]];return f&&f.push([h,e,n,a]),a}}function b(e,t){r[e]=w(e).concat(t)}function y(e,t){var n=r[e];if(n)for(var i=0;i<n.length;i++)n[i]===t&&n.splice(i,1)}function w(e){return r[e]||[]}function A(t){return g[t]=g[t]||e(h,t)}function x(e,t){var n=_();h.aborted||(0,o.D)(e,(function(e,r){t=t||"feature",c[r]=t,t in n||(n[t]=[])}))}function D(e){return!!_()[c[e]]}function _(){return h.backlog}}(void 0,"globalEE"),c.ee=d)},5546:(e,t,n)=>{n.d(t,{E:()=>r,p:()=>i});var r=n(2177).ee.get("handle");function i(e,t,n,i,o){o?(o.buffer([e],i),o.emit(e,t,n)):(r.buffer([e],i),r.emit(e,t,n))}},4322:(e,t,n)=>{n.d(t,{X:()=>o});var r=n(5546);o.on=a;var i=o.handlers={};function o(e,t,n,o){a(o||r.E,i,e,t,n)}function a(e,t,n,i,o){o||(o="feature"),e||(e=r.E);var a=t[o]=t[o]||{};(a[n]=a[n]||[]).push([e,i])}},3239:(e,t,n)=>{n.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var r=n(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};r._A.addEventListener("test",null,e),r._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(n,r))}function c(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(n,r))}},4402:(e,t,n)=>{n.d(t,{Rl:()=>a,ky:()=>s});var r=n(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=r._A?.crypto||r._A?.msCrypto;let t,n=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(31))),i.split("").map((e=>"x"===e?o(t,++n).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=r._A?.crypto||r._A?.msCrypto;let n,i=0;t&&t.getRandomValues&&(n=t.getRandomValues(new Uint8Array(31)));const a=[];for(var s=0;s<e;s++)a.push(o(n,++i).toString(16));return a.join("")}},7056:(e,t,n)=>{n.d(t,{Bq:()=>r,Hb:()=>o,oD:()=>i});const r="NRBA",i=144e5,o=18e5},7894:(e,t,n)=>{function r(){return Math.round(performance.now())}n.d(t,{z:()=>r})},50:(e,t,n)=>{function r(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}n.d(t,{Z:()=>r})},2587:(e,t,n)=>{n.d(t,{N:()=>c,T:()=>d});var r=n(2177),i=n(5546),o=n(8e3),a=n(3325);const s={stn:[a.D.sessionTrace],err:[a.D.jserrors,a.D.metrics],ins:[a.D.pageAction],spa:[a.D.spa],sr:[a.D.sessionReplay,a.D.sessionTrace]};function c(e,t){const n=r.ee.get(t);e&&"object"==typeof e&&(Object.entries(e).forEach((e=>{let[t,r]=e;void 0===d[t]&&(s[t]?s[t].forEach((e=>{r?(0,i.p)("feat-"+t,[],void 0,e,n):(0,i.p)("block-"+t,[],void 0,e,n),(0,i.p)("rumresp-"+t,[Boolean(r)],void 0,e,n)})):r&&(0,i.p)("feat-"+t,[],void 0,void 0,n),d[t]=Boolean(r))})),Object.keys(s).forEach((e=>{void 0===d[e]&&(s[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,n))),d[e]=!1)})),(0,o.L)(t,a.D.pageViewEvent))}const d={}},2210:(e,t,n)=>{n.d(t,{X:()=>i});var r=Object.prototype.hasOwnProperty;function i(e,t,n){if(r.call(e,t))return e[t];var i=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,n)=>{n.d(t,{D:()=>r});const r=(e,t)=>Object.entries(e||{}).map((e=>{let[n,r]=e;return t(n,r)}))},4351:(e,t,n)=>{n.d(t,{P:()=>o});var r=n(2177);const i=()=>{const e=new WeakSet;return(t,n)=>{if("object"==typeof n&&null!==n){if(e.has(n))return;e.add(n)}return n}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{r.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,n)=>{n.d(t,{K:()=>a,b:()=>o});var r=n(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,r.bP)("load",e,t)}function a(e){if(i())return e();(0,r.iz)("DOMContentLoaded",e)}},8632:(e,t,n)=>{n.d(t,{EZ:()=>d,Qy:()=>c,ce:()=>o,fP:()=>a,gG:()=>u,mF:()=>s});var r=n(7894),i=n(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,n){let i=a();const o=i.initializedAgents||{},s=o[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,r.z)(),date:new Date}),i.initializedAgents={...o,[e]:{...s,[n]:t}},i}function d(e,t){a()[e]=t}function u(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,n)=>{n.d(t,{N:()=>i});var r=n(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],n=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;return void(0,r.iz)("visibilitychange",(function(){if(t)return void("hidden"==document.visibilityState&&e());e(document.visibilityState)}),n,i)}},3081:(e,t,n)=>{n.d(t,{gF:()=>o,mY:()=>i,t9:()=>r,vz:()=>s,xS:()=>a});const r=n(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},7633:(e,t,n)=>{n.d(t,{Dz:()=>i,OJ:()=>a,qw:()=>o,t9:()=>r});const r=n(3325).D.pageViewEvent,i="firstbyte",o="domcontent",a="windowload"},9251:(e,t,n)=>{n.d(t,{t:()=>r});const r=n(3325).D.pageViewTiming},5938:(e,t,n)=>{n.d(t,{W:()=>o});var r=n(5763),i=n(2177);class o{constructor(e,t,n){this.agentIdentifier=e,this.aggregator=t,this.ee=i.ee.get(e,(0,r.OP)(this.agentIdentifier).isolatedBacklog),this.featureName=n,this.blocked=!1}}},9144:(e,t,n)=>{n.d(t,{j:()=>v});var r=n(3325),i=n(5763),o=n(5546),a=n(2177),s=n(7894),c=n(8e3),d=n(3960),u=n(385),l=n(50),f=n(3081),g=n(8632);function p(){const e=(0,g.gG)();["setErrorHandler","finished","addToTrace","inlineHit","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId"].forEach((t=>{e[t]=function(){for(var n=arguments.length,r=new Array(n),i=0;i<n;i++)r[i]=arguments[i];return function(t){for(var n=arguments.length,r=new Array(n>1?n-1:0),i=1;i<n;i++)r[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...r))})),o.length>1?o:o[0]}(t,...r)}}))}var h=n(2587);function v(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},v=arguments.length>2?arguments[2]:void 0,m=arguments.length>3?arguments[3]:void 0,{init:b,info:y,loader_config:w,runtime:A={loaderType:v},exposed:x=!0}=t;const D=(0,g.gG)();y||(b=D.init,y=D.info,w=D.loader_config),(0,i.Dg)(e,b||{}),(0,i.GE)(e,w||{}),(0,i.sU)(e,A),y.jsAttributes??={},u.v6&&(y.jsAttributes.isWorker=!0),(0,i.CX)(e,y),p();const _=function(e,t){t||(0,c.R)(e,"api");const g={};var p=a.ee.get(e),h=p.get("tracer"),v="api-",m=v+"ixn-";function b(t,n,r,o){const a=(0,i.C5)(e);return null===n?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:n}}),A(v,r,!0,o||null===n?"session":void 0)(t,n)}function y(){}["setErrorHandler","finished","addToTrace","inlineHit","addRelease"].forEach((e=>g[e]=A(v,e,!0,"api"))),g.addPageAction=A(v,"addPageAction",!0,r.D.pageAction),g.setCurrentRouteName=A(v,"routeName",!0,r.D.spa),g.setPageViewName=function(t,n){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(n||"http://custom.transaction")+t,A(v,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",n);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string or number type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var n={},i=this,a="function"==typeof t;return(0,o.p)(m+"tracer",[(0,s.z)(),e,n],i,r.D.spa,p),function(){if(h.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],n),a)try{return t.apply(this,arguments)}catch(e){throw h.emit("fn-err",[arguments,this,"string"==typeof e?new Error(e):e],n),e}finally{h.emit("fn-end",[(0,s.z)()],n)}}}};function A(e,t,n,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,r.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],n?null:this,i,p),n?void 0:this}}function x(){n.e(439).then(n.bind(n,7438)).then((t=>{let{setAPI:n}=t;n(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(m,e,void 0,r.D.spa)})),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,r.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,r.D.jserrors,p)},u.il?(0,d.b)((()=>x()),!0):x(),g}(e,m);return(0,g.Qy)(e,_,"api"),(0,g.Qy)(e,x,"exposed"),(0,g.EZ)("activatedFeatures",h.T),_}},3325:(e,t,n)=>{n.d(t,{D:()=>r,p:()=>i});const r={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[r.pageViewEvent]:1,[r.pageViewTiming]:2,[r.metrics]:3,[r.jserrors]:4,[r.ajax]:5,[r.sessionTrace]:6,[r.pageAction]:7,[r.spa]:8,[r.sessionReplay]:9}}},r={};function i(e){var t=r[e];if(void 0!==t)return t.exports;var o=r[e]={exports:{}};return n[e](o,o.exports,i),o.exports}i.m=n,i.d=(e,t)=>{for(var n in t)i.o(t,n)&&!i.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,n)=>(i.f[n](e,t),t)),[])),i.u=e=>(({78:"page_action-aggregate",147:"metrics-aggregate",242:"session-manager",317:"jserrors-aggregate",348:"page_view_timing-aggregate",412:"lazy-feature-loader",439:"async-api",538:"recorder",590:"session_replay-aggregate",675:"compressor",733:"session_trace-aggregate",786:"page_view_event-aggregate",873:"spa-aggregate",898:"ajax-aggregate"}[e]||e)+"."+{78:"ac76d497",147:"3dc53903",148:"1a20d5fe",242:"2a64278a",317:"49e41428",348:"bd6de33a",412:"2f55ce66",439:"30bd804e",538:"1b18459f",590:"cf0efb30",675:"ae9f91a8",733:"83105561",786:"06482edd",860:"03a8b7a5",873:"e6b09d52",898:"998ef92b"}[e]+"-1.236.0.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA:",i.l=(n,r,o,a)=>{if(e[n])e[n].push(r);else{var s,c;if(void 0!==o)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==n||l.getAttribute("data-webpack")==t+o){s=l;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=n),e[n]=[r];var f=(t,r)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[n];if(delete e[n],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(r))),t)return t(r)},g=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.j=6,i.p="https://js-agent.newrelic.com/",(()=>{var e={6:0,352:0};i.f.j=(t,n)=>{var r=i.o(e,t)?e[t]:void 0;if(0!==r)if(r)n.push(r[2]);else{var o=new Promise(((n,i)=>r=e[t]=[n,i]));n.push(r[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(n=>{if(i.o(e,t)&&(0!==(r=e[t])&&(e[t]=void 0),r)){var o=n&&("load"===n.type?"missing":n.type),a=n&&n.target&&n.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,r[1](s)}}),"chunk-"+t,t)}};var t=(t,n)=>{var r,o,[a,s,c]=n,d=0;if(a.some((t=>0!==e[t]))){for(r in s)i.o(s,r)&&(i.m[r]=s[r]);if(c)c(i)}for(t&&t(n);d<a.length;d++)o=a[d],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},n=window.webpackChunkNRBA=window.webpackChunkNRBA||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})();var o={};(()=>{i.r(o);var e=i(3325),t=i(5763);const n=Object.values(e.D);function r(e){const r={};return n.forEach((n=>{r[n]=function(e,n){return!1!==(0,t.Mt)(n,"".concat(e,".enabled"))}(n,e)})),r}var a=i(9144);var s=i(5546),c=i(385),d=i(8e3),u=i(5938),l=i(3960),f=i(50);class g extends u.W{constructor(e,t,n){let r=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,n),this.auto=r,this.abortHandler,this.featAggregate,this.onAggregateImported,r&&(0,d.R)(e,n)}importAggregator(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate||!this.auto)return;const n=c.il&&!0===(0,t.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let r;this.onAggregateImported=new Promise((e=>{r=e}));const o=async()=>{let t;try{if(n){const{setupAgentSession:e}=await Promise.all([i.e(860),i.e(242)]).then(i.bind(i,3228));t=e(this.agentIdentifier)}}catch(e){(0,f.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",e)}try{if(!this.shouldImportAgg(this.featureName,t))return void(0,d.L)(this.agentIdentifier,this.featureName);const{lazyFeatureLoader:n}=await i.e(412).then(i.bind(i,8582)),{Aggregate:o}=await n(this.featureName,"aggregate");this.featAggregate=new o(this.agentIdentifier,this.aggregator,e),r(!0)}catch(e){(0,f.Z)("Downloading and initializing ".concat(this.featureName," failed..."),e),this.abortHandler?.(),r(!1)}};c.il?(0,l.b)((()=>o()),!0):o()}shouldImportAgg(n,r){return n!==e.D.sessionReplay||!1!==(0,t.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!r?.isNew||!!r?.state.sessionReplay)}}var p=i(7633),h=i(7894);class v extends g{static featureName=p.t9;constructor(n,r){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(n,r,p.t9,i),("undefined"==typeof PerformanceNavigationTiming||c.Tt)&&"undefined"!=typeof PerformanceTiming){const r=(0,t.OP)(n);r[p.Dz]=Math.max(Date.now()-r.offset,0),(0,l.K)((()=>r[p.qw]=Math.max((0,h.z)()-r[p.Dz],0))),(0,l.b)((()=>{const t=(0,h.z)();r[p.OJ]=Math.max(t-r[p.Dz],0),(0,s.p)("timing",["load",t],void 0,e.D.pageViewTiming,this.ee)}))}this.importAggregator()}}var m=i(1117),b=i(1284);class y extends m.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,n,r,i){var o=this.getBucket(e,t,n,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,b.D)(e,(function(e,n){t[e]=w(n,t[e])})),t}(r,o.metrics),o}merge(e,t,n,r,i){var o=this.getBucket(e,t,r,i);if(o.metrics){var a=o.metrics;a.count+=n.count,(0,b.D)(n,(function(e,t){if("count"!==e){var r=a[e],i=n[e];i&&!i.c?a[e]=w(i.t,r):a[e]=function(e,t){if(!t)return e;t.c||(t=A(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=n}storeMetric(e,t,n,r){var i=this.getBucket(e,t,n);return i.stats=w(r,i.stats),i}getBucket(e,t,n,r){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:n||{}},r&&(i.custom=r)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},n="",r=!1,i=0;i<e.length;i++)t[n=e[i]]=x(this.aggregatedData[n]),t[n].length&&(r=!0),delete this.aggregatedData[n];return r?t:null}}function w(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=A(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function A(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function x(e){return"object"!=typeof e?[]:(0,b.D)(e,D)}function D(e,t){return t}var _=i(8632),j=i(4402),E=i(4351);var k=i(7956),T=i(3239),I=i(9251);class N extends g{static featureName=I.t;constructor(e,n){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,n,I.t,r),c.il&&((0,t.OP)(e).initHidden=Boolean("hidden"===document.visibilityState),(0,k.N)((()=>(0,s.p)("docHidden",[(0,h.z)()],void 0,I.t,this.ee)),!0),(0,T.bP)("pagehide",(()=>(0,s.p)("winPagehide",[(0,h.z)()],void 0,I.t,this.ee))),this.importAggregator())}}var P=i(3081);class S extends g{static featureName=P.t9;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,P.t9,n),this.importAggregator()}}new class{constructor(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,j.ky)(16);c._A?(this.agentIdentifier=t,this.sharedAggregator=new y({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(v),Object.assign(this,(0,a.j)(this.agentIdentifier,e,e.loaderType||"agent")),this.start()):(0,f.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,t.C5)(this.agentIdentifier),init:(0,t.P_)(this.agentIdentifier),loader_config:(0,t.DL)(this.agentIdentifier),runtime:(0,t.OP)(this.agentIdentifier)}}start(){const t="features";try{const n=r(this.agentIdentifier),i=[...this.desiredFeatures];i.sort(((t,n)=>e.p[t.featureName]-e.p[n.featureName])),i.forEach((t=>{if(n[t.featureName]||t.featureName===e.D.pageViewEvent){const r=function(t){switch(t){case e.D.ajax:return[e.D.jserrors];case e.D.sessionTrace:return[e.D.ajax,e.D.pageViewEvent];case e.D.sessionReplay:return[e.D.sessionTrace];case e.D.pageViewTiming:return[e.D.pageViewEvent];default:return[]}}(t.featureName);r.every((e=>n[e]))||(0,f.Z)("".concat(t.featureName," is enabled but one or more dependent features has been disabled (").concat((0,E.P)(r),"). This may cause unintended consequences or missing data...")),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,_.Qy)(this.agentIdentifier,this.features,t)}catch(e){(0,f.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",e);for(const e in this.features)this.features[e].abortHandler?.();const n=(0,_.fP)();return delete n.initializedAgents[this.agentIdentifier]?.api,delete n.initializedAgents[this.agentIdentifier]?.[t],delete this.sharedAggregator,n.ee?.abort(),delete n.ee?.get(this.agentIdentifier),!1}}}({features:[v,N,S],loaderType:"lite"})})(),window.NRBA=o})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://cdn.cookielaw.org/" crossorigin />
+<link rel="dns-prefetch" href="https://cdn.cookielaw.org/" />
+<link rel="preconnect" href="https://geolocation.onetrust.com" crossorigin />
+<link rel="preload" href="https://cdn.cookielaw.org/consent/899004f6-8ea4-4da5-a327-a82ebed24f84/OtAutoBlock.js" as="script" />
+
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/899004f6-8ea4-4da5-a327-a82ebed24f84/OtAutoBlock.js"></script>
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="899004f6-8ea4-4da5-a327-a82ebed24f84"></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+
+
+<script src="https://cdn.cookielaw.org/opt-out/otCCPAiab.js" type="text/javascript" charset="UTF-8" ccpa-opt-out-ids="C0004" ccpa-opt-out-geo="ca" ccpa-opt-out-lspa="true" async></script>
+';
+<script>!function(n,e,o,r,i){if(!e){e=e||{},window.permutive=e,e.q=[],e.config=i||{},e.config.projectId=o,e.config.apiKey=r,e.config.environment=e.config.environment||"production";for(var t=["addon","identify","track","trigger","query","segment","segments","ready","on","once","user","consent"],c=0;c<t.length;c++){var f=t[c];e[f]=function(n){return function(){var o=Array.prototype.slice.call(arguments,0);e.q.push({functionName:n,arguments:o})}}(f)}}}(document,window.permutive,"f389d50a-32e0-478b-9d4b-2d4592528bea","9502d019-da52-4a3c-be4a-f811a812c7af",{});permutive.addon("web",{page:{"user":{"latitude":null,"longitude":null,"city":null,"region":null,"state":null,"countryName":null,"zipcode":null,"postalCode":null,"stateCode":null,"countryCode":null,"userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"},"title":"Green Car Reports","description":"See Reviews, First Drives, Gas Mileage News, Photos & Specs of high MPG vehicles. Read news and updates on plug-in hybrids, electric cars, fuel cells, and clean energy transportation."}});</script><script async src="https://cdn.permutive.com/f389d50a-32e0-478b-9d4b-2d4592528bea-web.js"></script>
+<script>
+        dataLayer =  [] ;
+                (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.setAttribute('class','optanon-category-C0001');j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window, document, 'script', 'dataLayer', 'GTM-M73XHX4');
+    </script>
+{
+<script defer type="text/plain" class="optanon-category-C0004">(function(){let p="";if(p===undefined){p='';}
+createQryStr(p);})();function createQryStr(usprivacy){let did=getDid();let queryStr='?p=6127';queryStr+='&us_privacy='+encodeURIComponent(usprivacy);queryStr+='&pageurl='+encodeURIComponent(window.location.href);queryStr+='&referrer='+encodeURIComponent(document.referrer);queryStr+='&did='+encodeURIComponent(did);queryStr+='&e='+1;let topic='';let urlPath=window.location.pathname;if(urlPath.startsWith('/news')){topic='News';let tags={"user":{"latitude":null,"longitude":null,"city":null,"region":null,"state":null,"countryName":null,"zipcode":null,"postalCode":null,"stateCode":null,"countryCode":null,"userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"},"title":"Green Car Reports","description":"See Reviews, First Drives, Gas Mileage News, Photos & Specs of high MPG vehicles. Read news and updates on plug-in hybrids, electric cars, fuel cells, and clean energy transportation."};if(tags.vehicle!==undefined){make=tags.vehicle.make||'';model=tags.vehicle.model||'';year=tags.vehicle.year||'';queryStr+='&make='+make;queryStr+='&model='+model;queryStr+='&year='+year;}}
+else{topic='';}
+queryStr+="&topic="+encodeURIComponent(topic);queryStr+="&language="+encodeURIComponent('English');console.log("PulsePoint QueryString: "+queryStr);var pulsePointScript=document.createElement("script");var useSSL="https:"==document.location.protocol;pulsePointScript.src=(useSSL?"https:":"http:")+"//bh.contextweb.com/cp"+queryStr;var node=document.getElementsByTagName("script")[0];node.parentNode.insertBefore(pulsePointScript,node);}
+function getDid(){const PROFILE_GUID_COOKIE='profileGuid';var cvalue="";if(!cvalue){cvalue=uuidv4();console.log('cvalue:'+cvalue);}
+return cvalue;}
+function uuidv4(){return([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g,c=>(c^crypto.getRandomValues(new Uint8Array(1))[0]&15>>c/4).toString(16));}</script>
+;
+<title>Green Car Reports - Hybrid and Electric Car News, Reviews and Buying Guides</title>
+<meta name="description" content="Read reviews, first drives, gas mileage news, photos &amp; specs of high-MPG vehicles. Read news and updates on plug-in hybrids, electric cars, fuel cells, fuel economy, mobility, and clean energy."> <link rel="canonical" href="https://www.greencarreports.com/">
+<script type="application/ld+json">
+
+{"@context":"https://schema.org","@type":"WebPage","@id":"https://www.greencarreports.com/","url":"https://www.greencarreports.com/","isPartOf":[{"@type":"WebSite","@id":"https://www.greencarreports.com/","url":"https://www.greencarreports.com/","name":"Green Car Reports"}],"mainEntity":{"0":{"@type":"WebSite","@id":"https://www.greencarreports.com/","url":"https://www.greencarreports.com/","name":"Green Car Reports"},"url":"https://www.greencarreports.com/","name":"Green Car Reports","sameAs":["https://www.facebook.com/GreenCarReports","https://www.twitter.com/GreenCarReports","https://www.youtube.com/user/greencarreports","https://www.instagram.com/greencarreports/"],"publisher":{"@type":"Organization","@id":"https://www.greencarreports.com/","url":"https://www.greencarreports.com/","name":"Green Car Reports","brand":{"@type":"Organization","url":"https://www.internetbrands.com/our-brands/automotive/","name":"Internet Brands Automotive Group"},"logo":{"@type":"ImageObject","@id":"https://www.greencarreports.com/images/square-logo.png","url":"https://www.greencarreports.com/images/square-logo.png","width":170,"height":170}},"potentialAction":{"@type":"SearchAction","target":"https://www.greencarreports.com/searchresults?q={query}","query-input":"required name=query"}}}
+</script>
+<meta property="fb:pages" content="143669659002741">
+<meta property="fb:app_id" content="80517230974">
+<meta property="og:site_name" content="Green Car Reports">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.greencarreports.com/">
+<meta property="og:title" content="Green Car Reports - Hybrid and Electric Car News, Reviews and Buying Guides">
+<meta property="og:description" content="Read reviews, first drives, gas mileage news, photos &amp; specs of high-MPG vehicles. Read news and updates on plug-in hybrids, electric cars, fuel cells, fuel economy, mobility, and clean energy.">
+<meta property="og:image" content="https://www.greencarreports.com/images/square-logo.png">
+<meta name="google-site-verification" content="_jpgj7Gdl0aOLALvFlH2NqCQaJ8xdEH9Ixzhf0MNVLc">
+<meta name="msvalidate.01" content="7EF21B5F5DFF73B793E5432E9F541F94">
+<link href="https://feeds.highgearmedia.com/?sites=GreenCarReports" rel="alternate" type="application/rss+xml" title="Green Car Reports News">
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link href="/css/app.css?id=b3af6963f7fd6cb177979f04c35ac286" rel="stylesheet">
+<style>
+.one-column,.two-column{margin-bottom:3rem}.category{color:#8ac63e;font-weight:700;margin:0 .5em 0 0;text-transform:uppercase}.category-label{background:#7f7f7f;border-radius:2px;display:inline-block;padding:.5em;text-transform:uppercase}time{color:#bcbcbc}.media{background:transparent}.media-grid .item{box-shadow:0 2px 10px 0 #ddd;margin:0 0 1.5%}.media-grid .item:hover{box-shadow:0 12px 10px 2px #ddd}.media-grid .item .title{-webkit-line-clamp:2;-webkit-box-orient:vertical;color:#1a1a1a;display:-webkit-box;height:2.4em;line-height:1.2em;margin-bottom:1em;overflow:hidden;padding:1em 1em 0}.media-grid .item .block-cat{color:#d2d2d2;font-size:12px;padding:0 0 1em 1.5em;text-align:left}.media-grid .item .block-cat :first-child{font-weight:700;padding-right:20px}#featured{background:#fff;overflow:hidden}#featured a.title{color:#1a1a1a;display:inline-block;font-size:3em;font-weight:700;margin:1rem 1rem 0}#featured img{width:100%}#featured .stamp{margin:.5rem 0 0 1rem}#featured .category,#featured time{display:inline-block;font-size:1.5em;padding:.5em 0}#featured .category{font-weight:700}#top-news{background:#fff;font-size:0;padding:1rem}#top-news:after{clear:both;content:"";display:table}#top-news ul{font-size:10px}#top-news ul.left li{margin-right:10px}#top-news ul li{background-color:#f8f8f8;border-left:4px solid transparent;box-sizing:border-box;font-size:1.6em;height:86px;line-height:1.2em;margin:0 0 10px;overflow:hidden;position:relative}#top-news ul li:hover{background-color:#fff;border-left:4px solid #8ac63e;border-radius:2px;box-shadow:0 0 8px 0 rgba(0,0,0,.2)}#top-news ul li .stamp{bottom:10px;font-size:.8em;left:10px;pointer-events:none;position:absolute}#top-news ul li a{box-sizing:border-box;color:#1a1a1a;display:block;height:inherit;padding:15px 10px}#homepage-most-popular{justify-content:space-between}#homepage-most-popular div:nth-child(7){display:none}@media (max-width:480px){#homepage-most-popular div:nth-child(7){display:block}}#homepage-most-popular img{width:auto}#homepage-most-popular .img-wrap img{width:100%}#first-drive-rail{display:none}#first-drive-rail .first-drive-rail-wrapper{position:relative}#first-drive-rail .red-button{margin:0 0 1rem;padding:1em 0;text-align:center;width:100%}#first-drive-rail .item{background:#fff}#first-drive-rail .item.ad{background:none;margin-bottom:1rem;text-align:center}#first-drive-rail .item .img-wrap img{width:100%}#first-drive-rail .item .title{background:#fff;color:#1a1a1a;display:block;font-size:18px;line-height:1.2em;min-height:2.5em;padding:1em 1em .5em}#first-drive-rail .item .block-cat{color:#d2d2d2;font-size:12px;padding:0 0 1em 1.5em}#first-drive-rail .item .block-cat :first-child{font-weight:700;padding-right:20px}#first-drive-rail .first-drive{height:620px;margin:1rem 0;overflow:hidden;position:relative}#first-drive-rail .pagination-container{position:absolute;right:0;top:0;z-index:10}#first-drive-rail .swiper-next,#first-drive-rail .swiper-prev{line-height:24px}#gallery-wrapper{background-color:#2d5564;background-position:50% 50%;background-repeat:no-repeat;padding:2em 0;position:relative}#gallery-wrapper .gallery-inner{box-sizing:border-box;margin:0 auto;max-width:1350px;padding:0 1rem}#gallery-wrapper .photo-galleries{position:relative}#gallery-wrapper .photo-galleries a.title{color:#fff;display:inline-block;font-size:18px;padding:5px 0 15px}#gallery-wrapper .photo-galleries a.title .read-more{color:#8ac63e;padding-top:5px}#gallery-wrapper .photo-galleries .swiper-slide,#gallery-wrapper .photo-galleries .swiper-slide .item{overflow:hidden}#gallery-wrapper .photo-galleries .swiper-slide .item img{width:100%}#gallery-wrapper .photo-galleries .swiper-slide .item .title{padding:10px}.swiper-image img{width:100%}h2.title{color:#05530e;font-size:2.5em;margin-bottom:1.5rem;text-transform:uppercase}h2.altername{color:#fff}.bctb-banner{background-color:#2d5564;background-position:50% 50%;background-repeat:no-repeat;color:#fff;height:280px;margin:3em 0 3rem;position:relative;text-align:center}.bctb-banner .site-logo{background:url(/images/logo.svg) no-repeat 0 0;height:55px;left:4%;position:absolute;top:10%;width:220px}@media (max-width:667px){.bctb-banner .site-logo{background:url(/images/logo.svg) no-repeat 0 0;left:0;margin:auto;position:relative}}.bctb-banner .banner-text{position:absolute;text-align:center;top:56%;transform:translateY(-50%);width:100%}.bctb-banner .lg-text{font-weight:600;margin-bottom:7px}.bctb-banner .lg-text,.bctb-banner .md-text{display:block;font-size:4em;text-transform:uppercase}.bctb-banner .md-text{margin-bottom:6px}.bctb-banner .sm-text{display:block;font-size:2em;margin-bottom:15px}#newsletter-and-ad{clear:both;padding:5rem 0;text-align:center}#newsletter-and-ad .ad,#newsletter-and-ad .rail-box{display:inline-block;vertical-align:top}#newsletter-and-ad .rail-box{float:none;max-width:350px}#latest-videos{background-color:#2d5564;background-position:50% 50%;background-repeat:no-repeat;background-size:cover;padding:1rem 0;position:relative}#latest-videos .fa-play-circle{font-size:8em;left:39%;position:absolute;top:31%}@media (min-width:768px){#latest-videos .fa-play-circle{font-size:10em;left:45%;top:37%}}#latest-videos .video-title{font-size:2.5em;font-weight:700;margin:.5em 0}#latest-videos .video-title a{color:#fff}#latest-videos .video-author,#latest-videos .video-excerpt{font-size:1.5em;line-height:1.5em;margin-bottom:.7em}#latest-videos .video-author a,#latest-videos .video-excerpt a{color:#fff}#latest-videos .red-button{margin-top:2em}#latest-videos a.popup-video{color:#fff}#latest-videos .swiper-image{margin-bottom:1rem;position:relative}#latest-videos .video-info{color:#fff;padding:1rem 0}.bctb-carousel{overflow:hidden}.bctb-carousel .swiper-slide{color:#fff;position:relative}.bctb-carousel .swiper-slide img{width:100%}.bctb-carousel .slide-info{box-sizing:border-box;padding:0 2em;position:absolute;text-align:center;top:45%;transform:translateY(-50%);width:100%}.bctb-carousel .slide-info .bctb-car{color:#8ac63e}.bctb-carousel .bctb-car,.bctb-carousel .bctb-subtitle{font-size:3em}.bctb-carousel .bctb-article-title{font-size:3em;font-weight:600;margin:.5em auto;width:70%}.bctb-carousel .bctb-article-title span{color:#8ac63e}.bctb-carousel .bctb-article-excerpt{font-size:5em;margin:0 auto 1em;position:relative;text-align:center;width:90%}.bctb-carousel .bctb-article-excerpt .quote{display:block;left:-.2em;position:absolute;top:-1.7em;width:3em}.bctb-carousel .bctb-article-excerpt .fa-quote-left{font-size:1.5em;left:18px;opacity:.3;position:absolute;top:-22px}.bctb-carousel .swiper-pagination{bottom:90px}.bctb-carousel .swiper-pagination-bullet{background-color:#999;height:15px;opacity:.7;width:15px}@media (max-width:375px){.bctb-carousel .swiper-pagination-bullet{height:13px;margin:0 6px;width:13px}}.bctb-carousel .swiper-pagination-bullet-active{background-color:#8ac63e}@media (max-width:1023px){.bctb-carousel .bctb-article-excerpt{font-size:3em}.bctb-carousel .swiper-pagination{bottom:60px}}@media (max-width:768px){.bctb-carousel .bctb-car,.bctb-carousel .bctb-subtitle{font-size:2em}}@media (max-width:560px){.bctb-carousel .swiper-container{background:#000}.bctb-carousel .swiper-slide{display:table;min-height:300px;padding:30px 0}.bctb-carousel .swiper-slide .overlay{display:none}.bctb-carousel .slide-info{display:table-cell;position:static;top:auto;transform:none;vertical-align:middle}.bctb-carousel img{display:none}}@media (max-width:480px){.media-grid .item{margin:0 0 20px}.media-grid .title{height:auto}.bctb-carousel .bctb-article-title{font-size:2em}.bctb-carousel .bctb-article-excerpt{font-size:3em;margin-bottom:.5em}.bctb-carousel .bctb-article-excerpt .quote{left:-.2em;top:-.9em;width:2em}.bctb-carousel .swiper-pagination{bottom:15px}#top-news ul li{font-size:1.5em;height:auto;max-height:100px;min-height:80px}#top-news ul li .stamp{bottom:auto;left:auto;padding:0 0 10px 10px;position:relative}#top-news ul.left li{margin-right:0}}@media (max-width:320px){.bctb-carousel .bctb-article-excerpt{font-size:3em}.bctb-carousel .swiper-pagination{bottom:40px}}@media (min-width:481px){.media .item{width:48%}.media .item.left{margin-right:4%}}@media (min-width:768px){#top-news ul{display:inline-block;vertical-align:top;width:50%}#top-news ul li{font-size:1.5em;height:90px;line-height:1.2em}.bctb-banner{height:200px;text-align:initial}.bctb-banner img{left:5%;top:11%}.bctb-banner .banner-text{text-align:center;top:56%}.bctb-banner .lg-text{display:initial;font-size:5em;font-weight:600;margin-right:13px;text-transform:uppercase}.bctb-banner .md-text{display:initial;font-size:5em;margin-bottom:0;padding-right:227px}.bctb-banner .sm-text{display:initial;font-size:2em;margin-bottom:0;padding-left:227px;padding-right:5px}}@media (min-width:1024px){#first-drive-block{display:none}#first-drive-rail{display:block}#first-drive-rail .first-drive{margin-bottom:0;position:relative}#first-drive-rail .first-drive .item{box-shadow:0 2px 10px 0 #ddd}.bctb-banner img{top:18%}.bctb-banner .md-text{margin-bottom:0;padding-right:13px}.bctb-banner .sm-text{padding-left:0;padding-right:15px}.media .item{width:32%}.media .item.left{margin-right:0}.media .item.middle{margin:0 1.5% 1.5%}#latest-videos .swiper-image{display:inline-block;width:55%}#latest-videos .video-info{box-sizing:border-box;display:inline-block;padding:0 0 1rem 1rem;vertical-align:top;width:34%}}@media (min-width:1280px){#top-news ul li{font-size:1.8em;line-height:1.2em}}
+
+</style>
+<script class="optanon-category-C0001" src="/js/head.js?id=dc9c4198d7734b90c02ee0f5551b3279"></script>
+<script defer src="https://confiant-integrations.global.ssl.fastly.net/cVCBi6sio0Kr78j5IZSJs1SQ8No/gpt_and_prebid/config.js"></script><script defer src="https://js-sec.indexww.com/ht/p/184397-164216896053308.js"></script><script defer src="https://internetbrands-d.openx.net/w/1.0/jstag?nc=2922-GreenCarReports"></script>
+<script>
+
+var gptadslots=[],googletag=googletag||{};googletag.cmd=googletag.cmd||[];(function(){var gads=document.createElement('script');var useSSL='https:'===document.location.protocol;gads.async=true;gads.type='text/javascript';gads.src=(useSSL?'https:':'http:')+'//www.googletagservices.com/tag/js/gpt.js';var node=document.getElementsByTagName('script')[0];node.parentNode.insertBefore(gads,node);})();hgmads.setAdUnitBasePath('/2922/greencarreports.tmus');
+    googletag.cmd.push(function() {
+    
+var mapping1=googletag.sizeMapping().addSize([1280,800],[[728,90]]).addSize([600,800],[[320,50]]).addSize([730,800],[[728,90]]).addSize([800,600],[[728,90]]).addSize([320,300],[[320,50]]).build();
+    
+var mapping9=googletag.sizeMapping().addSize([1280,800],[]).addSize([600,800],[[320,50]]).addSize([800,600],[]).addSize([320,300],[[320,50]]).build();
+    
+    
+    
+var mapping4=googletag.sizeMapping().addSize([0,0],[]).addSize([1280,800],[[300,250]]).addSize([600,800],[]).addSize([800,600],[[300,250]]).addSize([320,300],[]).build();
+    
+var mapping5=googletag.sizeMapping().addSize([0,0],[]).addSize([1280,800],[]).addSize([600,800],[[300,250]]).addSize([800,600],[]).addSize([320,300],[[300,250]]).build();
+    
+var mapping6=googletag.sizeMapping().addSize([0,0],[]).addSize([1280,800],[[970,250],[728,90]]).addSize([600,800],[[300,250]]).addSize([800,600],[[728,90]]).addSize([320,300],[[300,250]]).build();
+    
+    
+var mapping8=googletag.sizeMapping().addSize([0,0],[]).addSize([1280,800],[[728,90]]).addSize([600,800],[[300,250]]).addSize([800,600],[[728,90]]).addSize([320,300],[[300,250]]).build();
+    
+hgmads.setLastOrder(1);gptadslots.push(googletag.defineSlot('/2922/greencarreports.tmus/home/728x90_top',[[728,90]],'ad-top').defineSizeMapping(mapping1).setTargeting('kw',["top"]).setTargeting('tile',[1]).setTargeting('sz',["728x90"]).setTargeting('page',["homepage"]).setTargeting('variation',window.hgm_variation||'').setCollapseEmptyDiv(true).addService(googletag.pubads()));
+    
+hgmads.setLastOrder(9);gptadslots.push(googletag.defineSlot('/2922/greencarreports.tmus/home/320x50_bottom-sticky',[[320,50]],'bottom-sticky').defineSizeMapping(mapping9).setTargeting('kw',["bottom-sticky"]).setTargeting('tile',[9]).setTargeting('sz',["320x50"]).setTargeting('tags',["jaguar,electric-cars,i-pace"]).setTargeting('make',["jaguar"]).setTargeting('model',["i-pace"]).setTargeting('page',["homepage"]).setTargeting('variation',window.hgm_variation||'').setCollapseEmptyDiv(true).addService(googletag.pubads()));
+    
+hgmads.setLastOrder(2);gptadslots.push(googletag.defineOutOfPageSlot('/2922/greencarreports.tmus/home/1x1_OOP','ad-a-1').setTargeting('kw',["OOP"]).setTargeting('tile',[2]).setTargeting('sz',["1x1"]).setTargeting('page',["homepage"]).setTargeting('variation',window.hgm_variation||'').setCollapseEmptyDiv(true).addService(googletag.pubads()));
+    
+hgmads.setLastOrder(3);gptadslots.push(googletag.defineSlot('/2922/greencarreports.tmus/home/300x250_d-side-rail-top',[[300,250]],'ad-a-2').setTargeting('kw',["d-side-rail-top"]).setTargeting('tile',[3]).setTargeting('sz',["300x250"]).setTargeting('tags',["jaguar,electric-cars,i-pace"]).setTargeting('make',["jaguar"]).setTargeting('model',["i-pace"]).setTargeting('page',["homepage"]).setTargeting('variation',window.hgm_variation||'').setCollapseEmptyDiv(true).addService(googletag.pubads()));
+    
+hgmads.setLastOrder(4);gptadslots.push(googletag.defineSlot('/2922/greencarreports.tmus/home/300x250_d-side-rail-center',[[300,250]],'ad-a-3').defineSizeMapping(mapping4).setTargeting('kw',["d-side-rail-center"]).setTargeting('tile',[4]).setTargeting('sz',["300x250"]).setTargeting('tags',["jaguar,electric-cars,i-pace"]).setTargeting('make',["jaguar"]).setTargeting('model',["i-pace"]).setTargeting('page',["homepage"]).setTargeting('variation',window.hgm_variation||'').setCollapseEmptyDiv(true).addService(googletag.pubads()));
+    
+hgmads.setLastOrder(5);gptadslots.push(googletag.defineSlot('/2922/greencarreports.tmus/home/300x250_m-center',[[300,250]],'ad-a-4').defineSizeMapping(mapping5).setTargeting('kw',["m-center"]).setTargeting('tile',[5]).setTargeting('sz',["300x250"]).setTargeting('tags',["jaguar,electric-cars,i-pace"]).setTargeting('make',["jaguar"]).setTargeting('model',["i-pace"]).setTargeting('page',["homepage"]).setTargeting('variation',window.hgm_variation||'').setCollapseEmptyDiv(true).addService(googletag.pubads()));
+    
+hgmads.setLastOrder(6);gptadslots.push(googletag.defineSlot('/2922/greencarreports.tmus/home/728x90_center',[[728,90]],'ad-a-5').defineSizeMapping(mapping6).setTargeting('kw',["center"]).setTargeting('tile',[6]).setTargeting('sz',["728x90"]).setTargeting('tags',["jaguar,electric-cars,i-pace"]).setTargeting('make',["jaguar"]).setTargeting('model',["i-pace"]).setTargeting('page',["homepage"]).setTargeting('variation',window.hgm_variation||'').setCollapseEmptyDiv(true).addService(googletag.pubads()));
+    
+hgmads.setLastOrder(7);gptadslots.push(googletag.defineSlot('/2922/greencarreports.tmus/home/300x250_news-letter-center',[[300,250]],'ad-a-6').setTargeting('kw',["news-letter-center"]).setTargeting('tile',[7]).setTargeting('sz',["300x250"]).setTargeting('tags',["jaguar,electric-cars,i-pace"]).setTargeting('make',["jaguar"]).setTargeting('model',["i-pace"]).setTargeting('page',["homepage"]).setTargeting('variation',window.hgm_variation||'').setCollapseEmptyDiv(true).addService(googletag.pubads()));
+    
+hgmads.setLastOrder(8);gptadslots.push(googletag.defineSlot('/2922/greencarreports.tmus/home/728x90_bottom',[[728,90]],'ad-a-7').defineSizeMapping(mapping8).setTargeting('kw',["bottom"]).setTargeting('tile',[8]).setTargeting('sz',["728x90"]).setTargeting('tags',["jaguar,electric-cars,i-pace"]).setTargeting('make',["jaguar"]).setTargeting('model',["i-pace"]).setTargeting('page',["homepage"]).setTargeting('variation',window.hgm_variation||'').setCollapseEmptyDiv(true).addService(googletag.pubads()));
+        
+googletag.pubads().enableAsyncRendering();googletag.pubads().collapseEmptyDivs();googletag.pubads().disableInitialLoad();googletag.pubads().enableSingleRequest();if(window.Krux){googletag.pubads().setTargeting('ksg',window.Krux.segments);googletag.pubads().setTargeting('kuid',window.Krux.user);}
+      
+if(googletag.pubads().getTargeting('permutive').length==0){var kvs=window.localStorage.getItem('_pdfps');googletag.pubads().setTargeting('permutive',kvs?JSON.parse(kvs):[]);}
+            
+googletag.enableServices();hgmads.registerEventListeners();
+}); // cmd push
+
+!function(a9,a,p,s,t,A,g){if(a[a9])return;function q(c,r){a[a9]._Q.push([c,r])}a[a9]={init:function(){q("i",arguments)},fetchBids:function()
+{q("f",arguments)},setDisplayBids:function(){},targetingKeys:function(){return[]},_Q:[]};A=p.createElement(s);A.async=!0;A.src=t;g=p.getElementsByTagName(s)[0];g.parentNode.insertBefore(A,g)}("apstag",window,document,"script","//c.amazon-adsystem.com/aax2/apstag.js");apstag.init({pubID:'3188',adServer:'googletag',bidTimeout:2e3});
+
+googletag.cmd.push(function() {
+    
+hgmads.addStaticSlotById('ad-top');hgmads.addApsStaticSlot({slotID:'ad-top',sizes:[[728,90]],slotName:'/2922/greencarreports.tmus/home/728x90_top_ad-top'});hgmads.addLazySlotById('ad-top');hgmads.addApsLazySlot({slotID:'ad-top',sizes:[[728,90]],slotName:'/2922/greencarreports.tmus/home/728x90_top_ad-top'});var callbackFunction=new hgmads.CallbackFunctionContainer('ad-top',"$(window).trigger('resize.px.parallax')","",'false','slotRenderEnded','true');hgmads.addCallback(callbackFunction);var callbackFunction=new hgmads.CallbackFunctionContainer('ad-top',"hgmads.startStickyTimer","6",'true','slotRenderEnded','true');hgmads.addCallback(callbackFunction);hgmads.addTrottleInterval('ad-top',2);
+    
+hgmads.addStaticSlotById('bottom-sticky');hgmads.addApsStaticSlot({slotID:'bottom-sticky',sizes:[[320,50]],slotName:'/2922/greencarreports.tmus/home/320x50_bottom-sticky_bottom-sticky'});hgmads.addLazySlotById('bottom-sticky');hgmads.addApsLazySlot({slotID:'bottom-sticky',sizes:[[320,50]],slotName:'/2922/greencarreports.tmus/home/320x50_bottom-sticky_bottom-sticky'});var callbackFunction=new hgmads.CallbackFunctionContainer('bottom-sticky',"hgmads.startStickyTimer","0, bottom",'true','slotRenderEnded','true');hgmads.addCallback(callbackFunction);var callbackFunction=new hgmads.CallbackFunctionContainer('bottom-sticky',"hgmads.refreshOnScroll","",'true','slotRenderEnded','true');hgmads.addCallback(callbackFunction);var callbackFunction=new hgmads.CallbackFunctionContainer('bottom-sticky',"hgmads.suppressOnEvent","primis:Floating, .adv-spacer.bottom.sticky",'true','slotRenderEnded','true');hgmads.addCallback(callbackFunction);hgmads.addTrottleInterval('bottom-sticky',5);
+    
+hgmads.addStaticSlotById('ad-a-1');hgmads.addApsStaticSlot({slotID:'ad-a-1',sizes:[[1,1]],slotName:'/2922/greencarreports.tmus/home/1x1_OOP_ad-a-1'});var callbackFunction=new hgmads.CallbackFunctionContainer('ad-a-1',"hgmads.disableByMediaQuery","(max-width: 1350px)",'true','renderStaticAds','true');hgmads.addCallback(callbackFunction);hgmads.addTrottleInterval('ad-a-1',2);
+    
+hgmads.addStaticSlotById('ad-a-2');hgmads.addApsStaticSlot({slotID:'ad-a-2',sizes:[[300,250]],slotName:'/2922/greencarreports.tmus/home/300x250_d-side-rail-top_ad-a-2'});var callbackFunction=new hgmads.CallbackFunctionContainer('ad-a-2',"hgmads.disableByMediaQuery","(max-width: 850px)",'true','renderStaticAds','true');hgmads.addCallback(callbackFunction);hgmads.addTrottleInterval('ad-a-2',2);
+    
+hgmads.addLazySlotById('ad-a-3');hgmads.addApsLazySlot({slotID:'ad-a-3',sizes:[[300,250]],slotName:'/2922/greencarreports.tmus/home/300x250_d-side-rail-center_ad-a-3'});hgmads.addTrottleInterval('ad-a-3',2);
+    
+hgmads.addLazySlotById('ad-a-4');hgmads.addApsLazySlot({slotID:'ad-a-4',sizes:[[300,250]],slotName:'/2922/greencarreports.tmus/home/300x250_m-center_ad-a-4'});hgmads.addTrottleInterval('ad-a-4',2);
+    
+hgmads.addLazySlotById('ad-a-5');hgmads.addApsLazySlot({slotID:'ad-a-5',sizes:[[728,90]],slotName:'/2922/greencarreports.tmus/home/728x90_center_ad-a-5'});hgmads.addTrottleInterval('ad-a-5',2);
+    
+hgmads.addLazySlotById('ad-a-6');hgmads.addApsLazySlot({slotID:'ad-a-6',sizes:[[300,250]],slotName:'/2922/greencarreports.tmus/home/300x250_news-letter-center_ad-a-6'});hgmads.addTrottleInterval('ad-a-6',2);
+    
+hgmads.addLazySlotById('ad-a-7');hgmads.addApsLazySlot({slotID:'ad-a-7',sizes:[[728,90]],slotName:'/2922/greencarreports.tmus/home/728x90_bottom_ad-a-7'});hgmads.addTrottleInterval('ad-a-7',2);
+}); // cmd push
+    
+    
+    
+    
+    
+hgmads.addWaypointSlot('ad-a-3',{fetchMarginPercent:'200%',renderMarginPercent:'150%'});
+    
+hgmads.addWaypointSlot('ad-a-4',{fetchMarginPercent:'200%',renderMarginPercent:'150%'});
+    
+hgmads.addWaypointSlot('ad-a-5',{fetchMarginPercent:'200%',renderMarginPercent:'150%'});
+    
+hgmads.addWaypointSlot('ad-a-6',{fetchMarginPercent:'200%',renderMarginPercent:'150%'});
+    
+hgmads.addWaypointSlot('ad-a-7',{fetchMarginPercent:'200%',renderMarginPercent:'150%'});
+    
+googletag.cmd.push(function(){hgmads.renderStaticAds();});
+</script>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M73XHX4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<header>
+<div class="nav-container">
+<nav>
+<div class="mobile-menu"><a class="toggle-device-nav" href="#"></a></div>
+<div class="logo"><a href="/" title="Green Car Reports"></a></div>
+<div class="nav-items">
+<ul>
+<li><a class="nav-link" data-menu="news" href="/news">News</a></li>
+<li><a class="nav-link" href="/news/first-drives">First Drives</a></li>
+<li><a class="nav-link" href="/news/electric-cars">Electric Cars</a></li>
+<li><a class="nav-link" href="/news/hybrid-cars">Hybrids</a></li>
+<li><a class="nav-link" href="/news/buying-guides">Guides</a></li>
+<li><a class="nav-link" href="/news/green-life">Green Life</a></li>
+<li class="desktop-newsletter"><a class="nav-link-btn" data-menu="newsletter" href="javascript:void(0)" title="Newsletter Signup"><img src="/images/envelope.svg" />newsletter</a></li>
+</ul>
+</div>
+<div class="search">
+<a class="nav-link-search" data-menu="search" href="javascript:void(0)" title="Search"></a>
+</div>
+</nav>
+</div>
+<div class="adv-spacer-top-wraper">
+<div class="adv-spacer top ">
+<div id="ad-top"></div>
+</div>
+</div>
+<script>
+            dataLayer.push({
+                ga4_measurement_id: 'G-3LFB3GG7R7'
+            });
+        </script>
+</header>
+<div id="main">
+<div class="hidden-slot" id="ad-a-1"></div>
+<script>(function(){var xpath='appendTo(.adv-container .adv-spacer-top)',sizes=[[300,250]],zone='home',pos='d-media-pop-up-top_m-media-pop-up-bottom',sizeW='300',sizeH='250',adClasses='',adSizeMap=[],label='',throttleInterval=2;var targets=[];targets.push({'kw':["d-media-pop-up-top_m-media-pop-up-bottom"]});targets.push({'sz':["300x250"]});targets.push({'page':["homepage"]});targets.push({'variation':window.hgm_variation||''});adSizeMap.push({'viewport':[0,0],'map':[]});adSizeMap.push({'viewport':[1280,800],'map':[[300,250]]});adSizeMap.push({'viewport':[1280,600],'map':[[300,250]]});adSizeMap.push({'viewport':[600,800],'map':[[320,50]]});adSizeMap.push({'viewport':[800,600],'map':[[728,90]]});adSizeMap.push({'viewport':[320,300],'map':[[320,50]]});var callbackFunctions=false;var wayPointConfig=false;hgmads.addDynamicSlot(xpath,sizes,targets,zone,pos,sizeW,sizeH,adClasses,adSizeMap,label,callbackFunctions,throttleInterval,wayPointConfig);})();</script><script>(function(){var xpath='appendTo(.adv-container .adv-spacer-bottom)',sizes=[[300,250]],zone='home',pos='d-media-pop-up-bottom_m-media-pop-up-bottom',sizeW='300',sizeH='250',adClasses='',adSizeMap=[],label='',throttleInterval=2;var targets=[];targets.push({'kw':["d-media-pop-up-bottom_m-media-pop-up-bottom"]});targets.push({'sz':["300x250"]});targets.push({'page':["homepage"]});targets.push({'variation':window.hgm_variation||''});adSizeMap.push({'viewport':[0,0],'map':[]});adSizeMap.push({'viewport':[1280,800],'map':[[300,250]]});adSizeMap.push({'viewport':[1280,600],'map':[[300,250]]});adSizeMap.push({'viewport':[600,800],'map':[]});adSizeMap.push({'viewport':[800,600],'map':[]});adSizeMap.push({'viewport':[320,300],'map':[]});var callbackFunctions=false;var wayPointConfig=false;hgmads.addDynamicSlot(xpath,sizes,targets,zone,pos,sizeW,sizeH,adClasses,adSizeMap,label,callbackFunctions,throttleInterval,wayPointConfig);})();</script>
+<script>(function(){var xpath='appendTo(.video-popup-sidebar .adv-spacer-top)',sizes=[[300,250]],zone='home',pos='d-media-pop-up-top_m-media-pop-up-bottom',sizeW='300',sizeH='250',adClasses='',adSizeMap=[],label='',throttleInterval=2;var targets=[];targets.push({'kw':["d-media-pop-up-top_m-media-pop-up-bottom"]});targets.push({'sz':["300x250"]});targets.push({'page':["homepage"]});targets.push({'variation':window.hgm_variation||''});adSizeMap.push({'viewport':[0,0],'map':[]});adSizeMap.push({'viewport':[1280,800],'map':[[300,250]]});adSizeMap.push({'viewport':[600,800],'map':[[300,250]]});adSizeMap.push({'viewport':[800,600],'map':[[320,50]]});adSizeMap.push({'viewport':[320,300],'map':[[320,50]]});var callbackFunctions=false;var wayPointConfig=false;hgmads.addDynamicSlot(xpath,sizes,targets,zone,pos,sizeW,sizeH,adClasses,adSizeMap,label,callbackFunctions,throttleInterval,wayPointConfig);})();</script><script>(function(){var xpath='appendTo(.video-popup-sidebar .adv-spacer-bottom)',sizes=[[300,250]],zone='home',pos='d-media-pop-up-bottom_m-media-pop-up-bottom',sizeW='300',sizeH='250',adClasses='',adSizeMap=[],label='',throttleInterval=2;var targets=[];targets.push({'kw':["d-media-pop-up-bottom_m-media-pop-up-bottom"]});targets.push({'sz':["300x250"]});targets.push({'page':["homepage"]});targets.push({'variation':window.hgm_variation||''});adSizeMap.push({'viewport':[0,0],'map':[]});adSizeMap.push({'viewport':[1280,800],'map':[[300,250]]});adSizeMap.push({'viewport':[600,800],'map':[[300,250]]});adSizeMap.push({'viewport':[800,600],'map':[[320,50]]});adSizeMap.push({'viewport':[320,300],'map':[[320,50]]});var callbackFunctions=false;var wayPointConfig=false;hgmads.addDynamicSlot(xpath,sizes,targets,zone,pos,sizeW,sizeH,adClasses,adSizeMap,label,callbackFunctions,throttleInterval,wayPointConfig);})();</script>
+<h1 class="page-title">Top News</h1>
+<div class="two-column">
+<div class="content-wrap">
+<div id="featured">
+<a href="/news/1140181_2023-ford-f-150-lightning-gets-1-500-discount-in-some-regions" title="2023 Ford F-150 Lightning gets up to $2,500 discount in some regions">
+<img data-id="100871116" src="https://cimg0.ibsrv.net/ibimg/hgm/1280x720-1/100/871/ford-f-150-lightning-green-car-reports-best-car-to-buy-2023_100871116.jpg" alt="Ford F-150 Lightning: Green Car Reports Best Car To Buy 2023" srcset="https://cimg0.ibsrv.net/ibimg/hgm/1280x720-1/100/871/ford-f-150-lightning-green-car-reports-best-car-to-buy-2023_100871116.jpg 1280w, https://cimg0.ibsrv.net/ibimg/hgm/1200x675-1/100/871/ford-f-150-lightning-green-car-reports-best-car-to-buy-2023_100871116.jpg 1200w, https://cimg0.ibsrv.net/ibimg/hgm/1024x576-1/100/871/ford-f-150-lightning-green-car-reports-best-car-to-buy-2023_100871116.jpg 1024w, https://cimg0.ibsrv.net/ibimg/hgm/960x540-1/100/871/ford-f-150-lightning-green-car-reports-best-car-to-buy-2023_100871116.jpg 960w, https://cimg0.ibsrv.net/ibimg/hgm/600x338-1/100/871/ford-f-150-lightning-green-car-reports-best-car-to-buy-2023_100871116.jpg 600w" sizes="(max-width: 440px) 600px, (min-width: 1024px) 960px, calc(100vw - 2rem)">
+</a>
+<a class="title" href="/news/1140181_2023-ford-f-150-lightning-gets-1-500-discount-in-some-regions">2023 Ford F-150 Lightning gets up to $2,500 discount in some regions</a>
+<div class="stamp">
+<span class="category">Electric Cars</span>
+<time datetime="2023-07-12T15:55:00+0000">July 12, 2023</time>
+</div>
+</div>
+<div id="top-news">
+<ul class="left">
+<li data-id="0" data-title="Caterham Project V concept previews lightweight electric sports car" data-category="Electric Cars" data-time="July 13, 2023">
+<a href="/news/1140189_caterham-project-v-concept-previews-lightweight-electric-sports-car">Caterham Project V concept previews lightweight electric sports car</a>
+<div class="stamp">
+<span class="category">Electric Cars</span>
+<time datetime="2023-07-13T15:00:00+0000">July 13, 2023</time>
+</div>
+</li>
+<li data-id="1" data-title="Rivian pass-through charging could use its EVs as extension cords" data-category="Electric Cars" data-time="July 13, 2023">
+<a href="/news/1140186_rivian-pass-through-charging-could-use-its-evs-as-extension-cords">Rivian pass-through charging could use its EVs as extension cords</a>
+<div class="stamp">
+<span class="category">Electric Cars</span>
+<time datetime="2023-07-13T13:30:00+0000">July 13, 2023</time>
+</div>
+</li>
+<li data-id="2" data-title="Canoo delivers NASA Artemis shuttles, broadens DoD battery project" data-category="Electric Cars" data-time="July 13, 2023">
+<a href="/news/1140185_canoo-delivers-nasa-artemis-shuttles-broadens-dod-battery-project">Canoo delivers NASA Artemis shuttles, broadens DoD battery project</a>
+<div class="stamp">
+<span class="category">Electric Cars</span>
+<time datetime="2023-07-13T12:00:00+0000">July 13, 2023</time>
+</div>
+</li>
+<li data-id="3" data-title="F-150 Lightning discount, Renault-Geely hybrid push, Toyota fuel cells: Today’s Car News" data-category="Today in Car News" data-time="July 12, 2023">
+<a href="/news/1140182_f-150-lightning-discount-renault-geely-hybrid-push-toyota-fuel-cells-today-s-car-news">F-150 Lightning discount, Renault-Geely hybrid push, Toyota fuel cells: Today’s Car News</a>
+<div class="stamp">
+<span class="category">Today in Car News</span>
+<time datetime="2023-07-12T16:40:00+0000">July 12, 2023</time>
+</div>
+</li>
+<li data-id="4" data-title="Toyota shifts hydrogen fuel-cell focus to Europe and China" data-category="Fuel Cell" data-time="July 12, 2023">
+<a href="/news/1140172_toyota-shifts-hydrogen-fuel-cell-focus-to-europe-and-china">Toyota shifts hydrogen fuel-cell focus to Europe and China</a>
+<div class="stamp">
+<span class="category">Fuel Cell</span>
+<time datetime="2023-07-12T14:30:00+0000">July 12, 2023</time>
+</div>
+</li>
+<li data-id="5" data-title="$7.7B Renault-Geely venture seeks to challenge Toyota on hybrids" data-category="Hybrids" data-time="July 12, 2023">
+<a href="/news/1140173_renault-geely-venture-seeks-to-challenge-toyota-on-hybrids">$7.7B Renault-Geely venture seeks to challenge Toyota on hybrids</a>
+<div class="stamp">
+<span class="category">Hybrids</span>
+<time datetime="2023-07-12T13:50:00+0000">July 12, 2023</time>
+</div>
+</li>
+</ul>
+<ul>
+<li data-id="0" data-title="800V charging and Tesla, Audi EP4, EV supply and demand: Today’s Car News" data-category="Today in Car News" data-time="July 11, 2023">
+<a href="/news/1140168_800v-charging-and-tesla-audi-ep4-ev-supply-and-demand-today-s-car-news">800V charging and Tesla, Audi EP4, EV supply and demand: Today’s Car News</a>
+<div class="stamp">
+<span class="category">Today in Car News</span>
+<time datetime="2023-07-11T15:55:00+0000">July 11, 2023</time>
+</div>
+</li>
+<li data-id="1" data-title="These EVs have 800V charging: Why it’s better with or without Tesla’s NACS" data-category="Electric Cars" data-time="July 11, 2023">
+<a href="/news/1140166_these-evs-have-800v-charging-why-its-better-with-or-without-teslas-nacs">These EVs have 800V charging: Why it’s better with or without Tesla’s NACS</a>
+<div class="stamp">
+<span class="category">Electric Cars</span>
+<time datetime="2023-07-11T15:40:00+0000">July 11, 2023</time>
+</div>
+</li>
+<li data-id="2" data-title="Report: EV inventories are swelling, and prices may drop soon" data-category="Electric Cars" data-time="July 11, 2023">
+<a href="/news/1140160_report-ev-inventories-are-swelling-and-prices-may-drop-soon">Report: EV inventories are swelling, and prices may drop soon</a>
+<div class="stamp">
+<span class="category">Electric Cars</span>
+<time datetime="2023-07-11T13:30:00+0000">July 11, 2023</time>
+</div>
+</li>
+<li data-id="3" data-title="Speedy Audi compact EV project taps brand&#039;s NSU heritage" data-category="Electric Cars" data-time="July 11, 2023">
+<a href="/news/1140159_speedy-audi-compact-ev-project-taps-brand-s-nsu-heritage">Speedy Audi compact EV project taps brand&#039;s NSU heritage</a>
+<div class="stamp">
+<span class="category">Electric Cars</span>
+<time datetime="2023-07-11T12:00:00+0000">July 11, 2023</time>
+</div>
+</li>
+<li data-id="4" data-title="Jaguar I-Pace review, Fisker Ocean production, Mercedes and Tesla port: Today’s Car News" data-category="Today in Car News" data-time="July 10, 2023">
+<a href="/news/1140158_jaguar-i-pace-review-fisker-ocean-production-mercedes-and-tesla-port-today-s-car-news">Jaguar I-Pace review, Fisker Ocean production, Mercedes and Tesla port: Today’s Car News</a>
+<div class="stamp">
+<span class="category">Today in Car News</span>
+<time datetime="2023-07-10T15:55:00+0000">July 10, 2023</time>
+</div>
+</li>
+<li data-id="5" data-title="Review: 2023 Jaguar I-Pace is a better EV than it was on arrival" data-category="Electric Cars" data-time="July 10, 2023">
+<a href="/news/1140157_2023-jaguar-i-pace-test-drive-review">Review: 2023 Jaguar I-Pace is a better EV than it was on arrival</a>
+<div class="stamp">
+<span class="category">Electric Cars</span>
+<time datetime="2023-07-10T15:32:00+0000">July 10, 2023</time>
+</div>
+</li>
+</ul>
+<a class="red-button" href="/news">View All News Articles</a>
+</div>
+</div>
+<div class="rail-container">
+<div id="first-drive-rail">
+<div class="item ad">
+<div class="side-rail-ad" id="ad-a-2"></div>
+</div>
+<div class="first-drive-rail-wrapper">
+<h2 class="title">First Drives</h2>
+<div class="pagination-container">
+<div class="swiper-prev"><i class="fas fa-angle-up"></i></div>
+<div class="swiper-next"><i class="fas fa-angle-down"></i></div>
+</div>
+<div class="first-drive">
+<div class="swiper-container">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class="item">
+<a href="/news/1139659_2024-porsche-cayenne-e-hybrid-test-drive-review" class="img-wrap">
+<img class="lazy" data-id="100884926" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg2.ibsrv.net/ibimg/hgm/1920x1080-1/100/884/2024-porsche-cayenne_100884926.jpg" alt="2024 Porsche Cayenne E-Hybrid" data-srcset="https://cimg2.ibsrv.net/ibimg/hgm/1920x1080-1/100/884/2024-porsche-cayenne_100884926.jpg 1920w, https://cimg2.ibsrv.net/ibimg/hgm/1024x576-1/100/884/2024-porsche-cayenne_100884926.jpg 1024w, https://cimg2.ibsrv.net/ibimg/hgm/600x338-1/100/884/2024-porsche-cayenne_100884926.jpg 600w, https://cimg2.ibsrv.net/ibimg/hgm/300x169-1/100/884/2024-porsche-cayenne_100884926.jpg 300w" sizes="(max-width: 2000px) 300px, calc(100vw - 0rem)">
+</a>
+<a href="/news/1139659_2024-porsche-cayenne-e-hybrid-test-drive-review" class="title">Review: 2024 Porsche Cayenne E-Hybrid bridges the EV gap</a>
+<div class="block-cat">
+<span>Hybrids</span>
+<span>May 15, 2023</span>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="item">
+<a href="/news/1139636_2023-vinfast-vf-8-city-edition-test-drive-review" class="img-wrap">
+<img class="lazy" data-id="100884638" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg2.ibsrv.net/ibimg/hgm/1920x1080-1/100/884/2023-vinfast-vf-8-city-edition_100884638.jpg" alt="2023 Vinfast VF 8 City Edition" data-srcset="https://cimg2.ibsrv.net/ibimg/hgm/1920x1080-1/100/884/2023-vinfast-vf-8-city-edition_100884638.jpg 1920w, https://cimg2.ibsrv.net/ibimg/hgm/1024x576-1/100/884/2023-vinfast-vf-8-city-edition_100884638.jpg 1024w, https://cimg2.ibsrv.net/ibimg/hgm/600x338-1/100/884/2023-vinfast-vf-8-city-edition_100884638.jpg 600w, https://cimg2.ibsrv.net/ibimg/hgm/300x169-1/100/884/2023-vinfast-vf-8-city-edition_100884638.jpg 300w" sizes="(max-width: 2000px) 300px, calc(100vw - 0rem)">
+</a>
+<a href="/news/1139636_2023-vinfast-vf-8-city-edition-test-drive-review" class="title">Review: Don&#039;t buy the 2023 Vinfast VF 8 City Edition</a>
+<div class="block-cat">
+<span>Electric Cars</span>
+<span>May 12, 2023</span>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="item">
+<a href="/news/1139624_2024-volvo-xc40-recharge-c40-test-drive-review" class="img-wrap">
+<img class="lazy" data-id="100884485" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/884/2024-volvo-c40-recharge_100884485.jpg" alt="2024 Volvo C40 Recharge" data-srcset="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/884/2024-volvo-c40-recharge_100884485.jpg 1920w, https://cimg1.ibsrv.net/ibimg/hgm/1024x576-1/100/884/2024-volvo-c40-recharge_100884485.jpg 1024w, https://cimg1.ibsrv.net/ibimg/hgm/600x338-1/100/884/2024-volvo-c40-recharge_100884485.jpg 600w, https://cimg1.ibsrv.net/ibimg/hgm/300x169-1/100/884/2024-volvo-c40-recharge_100884485.jpg 300w" sizes="(max-width: 2000px) 300px, calc(100vw - 0rem)">
+</a>
+<a href="/news/1139624_2024-volvo-xc40-recharge-c40-test-drive-review" class="title">Review: 2024 Volvo XC40 Recharge, C40 Recharge show less can be more</a>
+<div class="block-cat">
+<span>Electric Cars</span>
+<span>May 11, 2023</span>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="item">
+<a href="/news/1139512_2023-toyota-prius-test-drive" class="img-wrap">
+<img class="lazy" data-id="100883318" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg2.ibsrv.net/ibimg/hgm/1920x1080-1/100/883/2023-toyota-prius_100883318.jpg" alt="2023 Toyota Prius" data-srcset="https://cimg2.ibsrv.net/ibimg/hgm/1920x1080-1/100/883/2023-toyota-prius_100883318.jpg 1920w, https://cimg2.ibsrv.net/ibimg/hgm/1024x576-1/100/883/2023-toyota-prius_100883318.jpg 1024w, https://cimg2.ibsrv.net/ibimg/hgm/600x338-1/100/883/2023-toyota-prius_100883318.jpg 600w, https://cimg2.ibsrv.net/ibimg/hgm/300x169-1/100/883/2023-toyota-prius_100883318.jpg 300w" sizes="(max-width: 2000px) 300px, calc(100vw - 0rem)">
+</a>
+<a href="/news/1139512_2023-toyota-prius-test-drive" class="title">Review: 2023 Toyota Prius looks like an electric sequel but fits the hybrid franchise</a>
+<div class="block-cat">
+<span>Hybrids</span>
+<span>April 30, 2023</span>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="item">
+<a href="/news/1139405_test-drive-review-2024-mercedes-benz-gle-450e-4matic" class="img-wrap">
+<img class="lazy" data-id="100882185" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/882/mercedes-benz-gle-class_100882185.jpg" alt="2024 Mercedes-Benz GLE 450e 4Matic" data-srcset="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/882/mercedes-benz-gle-class_100882185.jpg 1920w, https://cimg1.ibsrv.net/ibimg/hgm/1024x576-1/100/882/mercedes-benz-gle-class_100882185.jpg 1024w, https://cimg1.ibsrv.net/ibimg/hgm/600x338-1/100/882/mercedes-benz-gle-class_100882185.jpg 600w, https://cimg1.ibsrv.net/ibimg/hgm/300x169-1/100/882/mercedes-benz-gle-class_100882185.jpg 300w" sizes="(max-width: 2000px) 300px, calc(100vw - 0rem)">
+</a>
+<a href="/news/1139405_test-drive-review-2024-mercedes-benz-gle-450e-4matic" class="title">Review: 2024 Mercedes GLE 450e PHEV does hybrid the right way</a>
+<div class="block-cat">
+<span>Hybrids</span>
+<span>April 18, 2023</span>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="item">
+<a href="/news/1139275_review-2023-toyota-prius-prime-plug-in-reboots-volt-formula" class="img-wrap">
+<img class="lazy" data-id="100880481" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/880/2023-toyota-prius_100880481.jpg" alt="2023 Toyota Prius Prime" data-srcset="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/880/2023-toyota-prius_100880481.jpg 1920w, https://cimg1.ibsrv.net/ibimg/hgm/1024x576-1/100/880/2023-toyota-prius_100880481.jpg 1024w, https://cimg1.ibsrv.net/ibimg/hgm/600x338-1/100/880/2023-toyota-prius_100880481.jpg 600w, https://cimg1.ibsrv.net/ibimg/hgm/300x169-1/100/880/2023-toyota-prius_100880481.jpg 300w" sizes="(max-width: 2000px) 300px, calc(100vw - 0rem)">
+</a>
+<a href="/news/1139275_review-2023-toyota-prius-prime-plug-in-reboots-volt-formula" class="title">Review: 2023 Toyota Prius Prime plug-in reboots Volt formula</a>
+<div class="block-cat">
+<span>Hybrids</span>
+<span>April 5, 2023</span>
+</div>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="item">
+<a href="/news/1139267_volkswagen-id7-test-drive-review" class="img-wrap">
+<img class="lazy" data-id="100880276" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg0.ibsrv.net/ibimg/hgm/1920x1080-1/100/880/volkswagen-id-7-prototype-euro-spec_100880276.jpg" alt="Volkswagen ID.7 prototype (Euro spec)" data-srcset="https://cimg0.ibsrv.net/ibimg/hgm/1920x1080-1/100/880/volkswagen-id-7-prototype-euro-spec_100880276.jpg 1920w, https://cimg0.ibsrv.net/ibimg/hgm/1024x576-1/100/880/volkswagen-id-7-prototype-euro-spec_100880276.jpg 1024w, https://cimg0.ibsrv.net/ibimg/hgm/600x338-1/100/880/volkswagen-id-7-prototype-euro-spec_100880276.jpg 600w, https://cimg0.ibsrv.net/ibimg/hgm/300x169-1/100/880/volkswagen-id-7-prototype-euro-spec_100880276.jpg 300w" sizes="(max-width: 2000px) 300px, calc(100vw - 0rem)">
+</a>
+<a href="/news/1139267_volkswagen-id7-test-drive-review" class="title">Preview drive: 2025 Volkswagen ID.7 hatchback shows why aero rules for EVs</a>
+<div class="block-cat">
+<span>Electric Cars</span>
+<span>April 4, 2023</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a class="red-button" href="/news/first-drives">View More First Drive Articles</a>
+<div class="item ad">
+<div id="ad-a-3"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="one-column media" id="first-drive-block">
+<div class="content-wrap">
+<h2 class="title">First Drives</h2>
+<div class="media-grid">
+<div class="item  left ">
+<a class="img-wrap" href="/news/1139659_2024-porsche-cayenne-e-hybrid-test-drive-review">
+<img class="lazy" data-id="100884926" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg2.ibsrv.net/ibimg/hgm/1920x1080-1/100/884/2024-porsche-cayenne_100884926.jpg" alt="2024 Porsche Cayenne E-Hybrid" data-srcset="https://cimg2.ibsrv.net/ibimg/hgm/1920x1080-1/100/884/2024-porsche-cayenne_100884926.jpg 1920w, https://cimg2.ibsrv.net/ibimg/hgm/1024x576-1/100/884/2024-porsche-cayenne_100884926.jpg 1024w, https://cimg2.ibsrv.net/ibimg/hgm/824x464-1/100/884/2024-porsche-cayenne_100884926.jpg 824w, https://cimg2.ibsrv.net/ibimg/hgm/412x232-1/100/884/2024-porsche-cayenne_100884926.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1139659_2024-porsche-cayenne-e-hybrid-test-drive-review" class="title">Review: 2024 Porsche Cayenne E-Hybrid bridges the EV gap</a>
+<div class="block-cat">
+<span>Hybrids</span>
+<span>May 15, 2023</span>
+</div>
+</div>
+<div class="item ">
+<a class="img-wrap" href="/news/1139636_2023-vinfast-vf-8-city-edition-test-drive-review">
+<img class="lazy" data-id="100884638" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg2.ibsrv.net/ibimg/hgm/1920x1080-1/100/884/2023-vinfast-vf-8-city-edition_100884638.jpg" alt="2023 Vinfast VF 8 City Edition" data-srcset="https://cimg2.ibsrv.net/ibimg/hgm/1920x1080-1/100/884/2023-vinfast-vf-8-city-edition_100884638.jpg 1920w, https://cimg2.ibsrv.net/ibimg/hgm/1024x576-1/100/884/2023-vinfast-vf-8-city-edition_100884638.jpg 1024w, https://cimg2.ibsrv.net/ibimg/hgm/824x464-1/100/884/2023-vinfast-vf-8-city-edition_100884638.jpg 824w, https://cimg2.ibsrv.net/ibimg/hgm/412x232-1/100/884/2023-vinfast-vf-8-city-edition_100884638.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1139636_2023-vinfast-vf-8-city-edition-test-drive-review" class="title">Review: Don&#039;t buy the 2023 Vinfast VF 8 City Edition</a>
+<div class="block-cat">
+<span>Electric Cars</span>
+<span>May 12, 2023</span>
+</div>
+</div>
+<div class="item  left ">
+<a class="img-wrap" href="/news/1139624_2024-volvo-xc40-recharge-c40-test-drive-review">
+<img class="lazy" data-id="100884485" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/884/2024-volvo-c40-recharge_100884485.jpg" alt="2024 Volvo C40 Recharge" data-srcset="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/884/2024-volvo-c40-recharge_100884485.jpg 1920w, https://cimg1.ibsrv.net/ibimg/hgm/1024x576-1/100/884/2024-volvo-c40-recharge_100884485.jpg 1024w, https://cimg1.ibsrv.net/ibimg/hgm/824x464-1/100/884/2024-volvo-c40-recharge_100884485.jpg 824w, https://cimg1.ibsrv.net/ibimg/hgm/412x232-1/100/884/2024-volvo-c40-recharge_100884485.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1139624_2024-volvo-xc40-recharge-c40-test-drive-review" class="title">Review: 2024 Volvo XC40 Recharge, C40 Recharge show less can be more</a>
+<div class="block-cat">
+<span>Electric Cars</span>
+<span>May 11, 2023</span>
+</div>
+</div>
+<div class="item ">
+<a class="img-wrap" href="/news/1139512_2023-toyota-prius-test-drive">
+<img class="lazy" data-id="100883318" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg2.ibsrv.net/ibimg/hgm/1920x1080-1/100/883/2023-toyota-prius_100883318.jpg" alt="2023 Toyota Prius" data-srcset="https://cimg2.ibsrv.net/ibimg/hgm/1920x1080-1/100/883/2023-toyota-prius_100883318.jpg 1920w, https://cimg2.ibsrv.net/ibimg/hgm/1024x576-1/100/883/2023-toyota-prius_100883318.jpg 1024w, https://cimg2.ibsrv.net/ibimg/hgm/824x464-1/100/883/2023-toyota-prius_100883318.jpg 824w, https://cimg2.ibsrv.net/ibimg/hgm/412x232-1/100/883/2023-toyota-prius_100883318.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1139512_2023-toyota-prius-test-drive" class="title">Review: 2023 Toyota Prius looks like an electric sequel but fits the hybrid franchise</a>
+<div class="block-cat">
+<span>Hybrids</span>
+<span>April 30, 2023</span>
+</div>
+</div>
+<div class="item  left ">
+<a class="img-wrap" href="/news/1139405_test-drive-review-2024-mercedes-benz-gle-450e-4matic">
+<img class="lazy" data-id="100882185" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/882/mercedes-benz-gle-class_100882185.jpg" alt="2024 Mercedes-Benz GLE 450e 4Matic" data-srcset="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/882/mercedes-benz-gle-class_100882185.jpg 1920w, https://cimg1.ibsrv.net/ibimg/hgm/1024x576-1/100/882/mercedes-benz-gle-class_100882185.jpg 1024w, https://cimg1.ibsrv.net/ibimg/hgm/824x464-1/100/882/mercedes-benz-gle-class_100882185.jpg 824w, https://cimg1.ibsrv.net/ibimg/hgm/412x232-1/100/882/mercedes-benz-gle-class_100882185.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1139405_test-drive-review-2024-mercedes-benz-gle-450e-4matic" class="title">Review: 2024 Mercedes GLE 450e PHEV does hybrid the right way</a>
+<div class="block-cat">
+<span>Hybrids</span>
+<span>April 18, 2023</span>
+</div>
+</div>
+<div class="item ">
+<a class="img-wrap" href="/news/1139275_review-2023-toyota-prius-prime-plug-in-reboots-volt-formula">
+<img class="lazy" data-id="100880481" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/880/2023-toyota-prius_100880481.jpg" alt="2023 Toyota Prius Prime" data-srcset="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/880/2023-toyota-prius_100880481.jpg 1920w, https://cimg1.ibsrv.net/ibimg/hgm/1024x576-1/100/880/2023-toyota-prius_100880481.jpg 1024w, https://cimg1.ibsrv.net/ibimg/hgm/824x464-1/100/880/2023-toyota-prius_100880481.jpg 824w, https://cimg1.ibsrv.net/ibimg/hgm/412x232-1/100/880/2023-toyota-prius_100880481.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1139275_review-2023-toyota-prius-prime-plug-in-reboots-volt-formula" class="title">Review: 2023 Toyota Prius Prime plug-in reboots Volt formula</a>
+<div class="block-cat">
+<span>Hybrids</span>
+<span>April 5, 2023</span>
+</div>
+</div>
+<div class="item  left ">
+<a class="img-wrap" href="/news/1139267_volkswagen-id7-test-drive-review">
+<img class="lazy" data-id="100880276" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg0.ibsrv.net/ibimg/hgm/1920x1080-1/100/880/volkswagen-id-7-prototype-euro-spec_100880276.jpg" alt="Volkswagen ID.7 prototype (Euro spec)" data-srcset="https://cimg0.ibsrv.net/ibimg/hgm/1920x1080-1/100/880/volkswagen-id-7-prototype-euro-spec_100880276.jpg 1920w, https://cimg0.ibsrv.net/ibimg/hgm/1024x576-1/100/880/volkswagen-id-7-prototype-euro-spec_100880276.jpg 1024w, https://cimg0.ibsrv.net/ibimg/hgm/824x464-1/100/880/volkswagen-id-7-prototype-euro-spec_100880276.jpg 824w, https://cimg0.ibsrv.net/ibimg/hgm/412x232-1/100/880/volkswagen-id-7-prototype-euro-spec_100880276.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1139267_volkswagen-id7-test-drive-review" class="title">Preview drive: 2025 Volkswagen ID.7 hatchback shows why aero rules for EVs</a>
+<div class="block-cat">
+<span>Electric Cars</span>
+<span>April 4, 2023</span>
+</div>
+</div>
+</div>
+<a class="red-button" href="/news/first-drives">View All First Drives</a>
+<div class="adv-spacer">
+<div id="ad-a-4"></div>
+</div>
+</div>
+</div>
+<div class="one-column">
+<div id="gallery-wrapper" class="lazy-background" data-background="/images/block-background.jpg">
+<div class="overlay no-gradient"></div>
+<div class="photo-galleries">
+<div class="content-wrap">
+<h2 class="title altername">Photo Galleries</h2>
+<div class="swiper-container">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class="swiper-image">
+<a href="/news/1140189_caterham-project-v-concept-previews-lightweight-electric-sports-car" title="Caterham Project V concept previews lightweight electric sports car" onclick="hgm.openGallery(1140189, 1); return false;">
+<img class="lazy" data-id="100891096" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg0.ibsrv.net/ibimg/hgm/1920x1080-1/100/891/caterham-project-v-concept-electric-sports-car_100891096.jpg" alt="Caterham Project V concept electric sports car" data-srcset="https://cimg0.ibsrv.net/ibimg/hgm/1920x1080-1/100/891/caterham-project-v-concept-electric-sports-car_100891096.jpg 1920w, https://cimg0.ibsrv.net/ibimg/hgm/1024x576-1/100/891/caterham-project-v-concept-electric-sports-car_100891096.jpg 1024w, https://cimg0.ibsrv.net/ibimg/hgm/900x506-1/100/891/caterham-project-v-concept-electric-sports-car_100891096.jpg 900w, https://cimg0.ibsrv.net/ibimg/hgm/450x253-1/100/891/caterham-project-v-concept-electric-sports-car_100891096.jpg 450w" sizes="(max-width: 1024px) 313px, calc(100vw - 2rem)">
+</a>
+</div>
+<a class="title" href="/news/1140189_caterham-project-v-concept-previews-lightweight-electric-sports-car">Caterham Project V concept previews lightweight... <span class="read-more far fa-plus-square"></span></a>
+</div>
+<div class="swiper-slide">
+<div class="swiper-image">
+<a href="/news/1140186_rivian-pass-through-charging-could-use-its-evs-as-extension-cords" title="Rivian pass-through charging could use its EVs as extension cords" onclick="hgm.openGallery(1140186, 1); return false;">
+<img class="lazy" data-id="100891059" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/891/rivian-pass-through-charging-patent-image_100891059.jpg" alt="Rivian pass-through charging patent image" data-srcset="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/891/rivian-pass-through-charging-patent-image_100891059.jpg 1920w, https://cimg3.ibsrv.net/ibimg/hgm/1024x576-1/100/891/rivian-pass-through-charging-patent-image_100891059.jpg 1024w, https://cimg3.ibsrv.net/ibimg/hgm/900x506-1/100/891/rivian-pass-through-charging-patent-image_100891059.jpg 900w, https://cimg3.ibsrv.net/ibimg/hgm/450x253-1/100/891/rivian-pass-through-charging-patent-image_100891059.jpg 450w" sizes="(max-width: 1024px) 313px, calc(100vw - 2rem)">
+</a>
+</div>
+<a class="title" href="/news/1140186_rivian-pass-through-charging-could-use-its-evs-as-extension-cords">Rivian pass-through charging could use its EVs as... <span class="read-more far fa-plus-square"></span></a>
+</div>
+<div class="swiper-slide">
+<div class="swiper-image">
+<a href="/news/1140185_canoo-delivers-nasa-artemis-shuttles-broadens-dod-battery-project" title="Canoo delivers NASA Artemis shuttles, broadens DoD battery project" onclick="hgm.openGallery(1140185, 1); return false;">
+<img class="lazy" data-id="100891043" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/891/canoo-crew-transportation-vehicles-for-nasa-artemis-program_100891043.jpg" alt="Canoo Crew Transportation Vehicles for NASA Artemis program" data-srcset="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/891/canoo-crew-transportation-vehicles-for-nasa-artemis-program_100891043.jpg 1920w, https://cimg3.ibsrv.net/ibimg/hgm/1024x576-1/100/891/canoo-crew-transportation-vehicles-for-nasa-artemis-program_100891043.jpg 1024w, https://cimg3.ibsrv.net/ibimg/hgm/900x506-1/100/891/canoo-crew-transportation-vehicles-for-nasa-artemis-program_100891043.jpg 900w, https://cimg3.ibsrv.net/ibimg/hgm/450x253-1/100/891/canoo-crew-transportation-vehicles-for-nasa-artemis-program_100891043.jpg 450w" sizes="(max-width: 1024px) 313px, calc(100vw - 2rem)">
+</a>
+</div>
+<a class="title" href="/news/1140185_canoo-delivers-nasa-artemis-shuttles-broadens-dod-battery-project">Canoo delivers NASA Artemis shuttles, broadens... <span class="read-more far fa-plus-square"></span></a>
+</div>
+<div class="swiper-slide">
+<div class="swiper-image">
+<a href="/news/1140181_2023-ford-f-150-lightning-gets-1-500-discount-in-some-regions" title="2023 Ford F-150 Lightning gets up to $2,500 discount in some regions" onclick="hgm.openGallery(1140181, 1); return false;">
+<img class="lazy" data-id="100871116" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg0.ibsrv.net/ibimg/hgm/1280x720-1/100/871/ford-f-150-lightning-green-car-reports-best-car-to-buy-2023_100871116.jpg" alt="Ford F-150 Lightning: Green Car Reports Best Car To Buy 2023" data-srcset="https://cimg0.ibsrv.net/ibimg/hgm/1280x720-1/100/871/ford-f-150-lightning-green-car-reports-best-car-to-buy-2023_100871116.jpg 1280w, https://cimg0.ibsrv.net/ibimg/hgm/1024x576-1/100/871/ford-f-150-lightning-green-car-reports-best-car-to-buy-2023_100871116.jpg 1024w, https://cimg0.ibsrv.net/ibimg/hgm/900x506-1/100/871/ford-f-150-lightning-green-car-reports-best-car-to-buy-2023_100871116.jpg 900w, https://cimg0.ibsrv.net/ibimg/hgm/450x253-1/100/871/ford-f-150-lightning-green-car-reports-best-car-to-buy-2023_100871116.jpg 450w" sizes="(max-width: 1024px) 313px, calc(100vw - 2rem)">
+</a>
+</div>
+<a class="title" href="/news/1140181_2023-ford-f-150-lightning-gets-1-500-discount-in-some-regions">2023 Ford F-150 Lightning gets up to $2,500... <span class="read-more far fa-plus-square"></span></a>
+</div>
+<div class="swiper-slide">
+<div class="swiper-image">
+<a href="/news/1140159_speedy-audi-compact-ev-project-taps-brand-s-nsu-heritage" title="Speedy Audi compact EV project taps brand&#039;s NSU heritage" onclick="hgm.openGallery(1140159, 1); return false;">
+<img class="lazy" data-id="100890793" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/audi-ep4-concept-based-on-the-nsu-prinz-4_100890793.jpg" alt="Audi EP4 concept based on the NSU Prinz 4" data-srcset="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/audi-ep4-concept-based-on-the-nsu-prinz-4_100890793.jpg 1920w, https://cimg1.ibsrv.net/ibimg/hgm/1024x576-1/100/890/audi-ep4-concept-based-on-the-nsu-prinz-4_100890793.jpg 1024w, https://cimg1.ibsrv.net/ibimg/hgm/900x506-1/100/890/audi-ep4-concept-based-on-the-nsu-prinz-4_100890793.jpg 900w, https://cimg1.ibsrv.net/ibimg/hgm/450x253-1/100/890/audi-ep4-concept-based-on-the-nsu-prinz-4_100890793.jpg 450w" sizes="(max-width: 1024px) 313px, calc(100vw - 2rem)">
+</a>
+</div>
+<a class="title" href="/news/1140159_speedy-audi-compact-ev-project-taps-brand-s-nsu-heritage">Speedy Audi compact EV project taps brand&#039;s NSU... <span class="read-more far fa-plus-square"></span></a>
+</div>
+<div class="swiper-slide">
+<div class="swiper-image">
+<a href="/news/1140142_2024-ford-maverick-no-longer-starts-with-37-mpg-hybrid-version" title="2024 Ford Maverick no longer starts with 37-mpg hybrid version" onclick="hgm.openGallery(1140142, 1); return false;">
+<img class="lazy" data-id="100859974" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg2.ibsrv.net/ibimg/hgm/2000x1125-1/100/859/2023-ford-maverick_100859974.jpg" alt="2023 Ford Maverick" data-srcset="https://cimg2.ibsrv.net/ibimg/hgm/2000x1125-1/100/859/2023-ford-maverick_100859974.jpg 2000w, https://cimg2.ibsrv.net/ibimg/hgm/1024x576-1/100/859/2023-ford-maverick_100859974.jpg 1024w, https://cimg2.ibsrv.net/ibimg/hgm/900x506-1/100/859/2023-ford-maverick_100859974.jpg 900w, https://cimg2.ibsrv.net/ibimg/hgm/450x253-1/100/859/2023-ford-maverick_100859974.jpg 450w" sizes="(max-width: 1024px) 313px, calc(100vw - 2rem)">
+</a>
+</div>
+<a class="title" href="/news/1140142_2024-ford-maverick-no-longer-starts-with-37-mpg-hybrid-version">2024 Ford Maverick no longer starts with 37-mpg... <span class="read-more far fa-plus-square"></span></a>
+</div>
+<div class="swiper-slide">
+<div class="swiper-image">
+<a href="/news/1140130_id-buzz-electric-van-is-the-face-of-vws-us-autonomous-test-fleet" title="ID.Buzz electric van is the face of VW’s US autonomous test fleet" onclick="hgm.openGallery(1140130, 1); return false;">
+<img class="lazy" data-id="100890659" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/volkswagen_100890659.jpg" alt="VW ID.Buzz autonomous test vehicle in Austin" data-srcset="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/volkswagen_100890659.jpg 1920w, https://cimg3.ibsrv.net/ibimg/hgm/1024x576-1/100/890/volkswagen_100890659.jpg 1024w, https://cimg3.ibsrv.net/ibimg/hgm/900x506-1/100/890/volkswagen_100890659.jpg 900w, https://cimg3.ibsrv.net/ibimg/hgm/450x253-1/100/890/volkswagen_100890659.jpg 450w" sizes="(max-width: 1024px) 313px, calc(100vw - 2rem)">
+</a>
+</div>
+<a class="title" href="/news/1140130_id-buzz-electric-van-is-the-face-of-vws-us-autonomous-test-fleet">ID.Buzz electric van is the face of VW’s US... <span class="read-more far fa-plus-square"></span></a>
+</div>
+<div class="swiper-slide">
+<div class="swiper-image">
+<a href="/news/1140121_fiat-600e-topolino-europe-500e-ev-us-bound" title="Fiat shows 600e and tiny Topolino for Europe, 500e EV still US-bound" onclick="hgm.openGallery(1140121, 1); return false;">
+<img class="lazy" data-id="100890511" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/fiat_100890511.jpg" alt="2024 Fiat 600e" data-srcset="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/fiat_100890511.jpg 1920w, https://cimg3.ibsrv.net/ibimg/hgm/1024x576-1/100/890/fiat_100890511.jpg 1024w, https://cimg3.ibsrv.net/ibimg/hgm/900x506-1/100/890/fiat_100890511.jpg 900w, https://cimg3.ibsrv.net/ibimg/hgm/450x253-1/100/890/fiat_100890511.jpg 450w" sizes="(max-width: 1024px) 313px, calc(100vw - 2rem)">
+</a>
+</div>
+<a class="title" href="/news/1140121_fiat-600e-topolino-europe-500e-ev-us-bound">Fiat shows 600e and tiny Topolino for Europe... <span class="read-more far fa-plus-square"></span></a>
+</div>
+<div class="swiper-slide">
+<div class="swiper-image">
+<a href="/news/1140120_stellantis-details-platform-for-mid-size-evs-starting-with-europe" title="Stellantis details platform for mid-size EVs, starting with Europe" onclick="hgm.openGallery(1140120, 1); return false;">
+<img class="lazy" data-id="100890614" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg2.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/stellantis-stla-medium-platform_100890614.jpg" alt="Stellantis STLA Medium platform" data-srcset="https://cimg2.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/stellantis-stla-medium-platform_100890614.jpg 1920w, https://cimg2.ibsrv.net/ibimg/hgm/1024x576-1/100/890/stellantis-stla-medium-platform_100890614.jpg 1024w, https://cimg2.ibsrv.net/ibimg/hgm/900x506-1/100/890/stellantis-stla-medium-platform_100890614.jpg 900w, https://cimg2.ibsrv.net/ibimg/hgm/450x253-1/100/890/stellantis-stla-medium-platform_100890614.jpg 450w" sizes="(max-width: 1024px) 313px, calc(100vw - 2rem)">
+</a>
+</div>
+<a class="title" href="/news/1140120_stellantis-details-platform-for-mid-size-evs-starting-with-europe">Stellantis details platform for mid-size EVs... <span class="read-more far fa-plus-square"></span></a>
+</div>
+</div>
+</div>
+<div class="pagination-container">
+<div class="swiper-prev">&lt;</div>
+<div class="swiper-counter"></div>
+<div class="swiper-next">&gt;</div>
+</div>
+<a class="red-button" href="/pictures">View All Galleries</a>
+</div>
+</div>
+</div>
+</div>
+<div class="one-column media">
+<div class="content-wrap">
+<h2 class="title">Most Popular this Week</h2>
+<div class="media-grid" id="homepage-most-popular">
+<div class="item">
+<a class="img-wrap" href="/news/1140142_2024-ford-maverick-no-longer-starts-with-37-mpg-hybrid-version">
+<img class="lazy" data-id="100859974" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg2.ibsrv.net/ibimg/hgm/2000x1125-1/100/859/2023-ford-maverick_100859974.jpg" alt="2023 Ford Maverick" data-srcset="https://cimg2.ibsrv.net/ibimg/hgm/2000x1125-1/100/859/2023-ford-maverick_100859974.jpg 2000w, https://cimg2.ibsrv.net/ibimg/hgm/1024x576-1/100/859/2023-ford-maverick_100859974.jpg 1024w, https://cimg2.ibsrv.net/ibimg/hgm/824x464-1/100/859/2023-ford-maverick_100859974.jpg 824w, https://cimg2.ibsrv.net/ibimg/hgm/412x232-1/100/859/2023-ford-maverick_100859974.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1140142_2024-ford-maverick-no-longer-starts-with-37-mpg-hybrid-version" class="title">2024 Ford Maverick no longer starts with 37-mpg hybrid version</a>
+</div>
+<div class="item">
+<a class="img-wrap" href="/news/1140166_these-evs-have-800v-charging-why-its-better-with-or-without-teslas-nacs">
+<img class="lazy" data-id="100839621" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/839/porsche-taycan-charging_100839621.jpg" alt="Porsche Taycan charging" data-srcset="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/839/porsche-taycan-charging_100839621.jpg 1920w, https://cimg1.ibsrv.net/ibimg/hgm/1024x576-1/100/839/porsche-taycan-charging_100839621.jpg 1024w, https://cimg1.ibsrv.net/ibimg/hgm/824x464-1/100/839/porsche-taycan-charging_100839621.jpg 824w, https://cimg1.ibsrv.net/ibimg/hgm/412x232-1/100/839/porsche-taycan-charging_100839621.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1140166_these-evs-have-800v-charging-why-its-better-with-or-without-teslas-nacs" class="title">These EVs have 800V charging: Why it’s better with or without Tesla’s NACS</a>
+</div>
+<div class="item">
+<a class="img-wrap" href="/news/1140145_mercedes-benz-shifts-to-tesla-charging-port-for-north-america">
+<img class="lazy" data-id="100890765" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/mercedes-benz-amg-eqe-sedan-at-tesla-supercharger-station_100890765.jpg" alt="Mercedes-Benz AMG EQE sedan at Tesla Supercharger station" data-srcset="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/mercedes-benz-amg-eqe-sedan-at-tesla-supercharger-station_100890765.jpg 1920w, https://cimg1.ibsrv.net/ibimg/hgm/1024x576-1/100/890/mercedes-benz-amg-eqe-sedan-at-tesla-supercharger-station_100890765.jpg 1024w, https://cimg1.ibsrv.net/ibimg/hgm/824x464-1/100/890/mercedes-benz-amg-eqe-sedan-at-tesla-supercharger-station_100890765.jpg 824w, https://cimg1.ibsrv.net/ibimg/hgm/412x232-1/100/890/mercedes-benz-amg-eqe-sedan-at-tesla-supercharger-station_100890765.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1140145_mercedes-benz-shifts-to-tesla-charging-port-for-north-america" class="title">Mercedes-Benz shifts to Tesla charging port for North America</a>
+</div>
+<div class="item">
+<a class="img-wrap" href="/news/1140160_report-ev-inventories-are-swelling-and-prices-may-drop-soon">
+<img class="lazy" data-id="100807717" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg1.ibsrv.net/ibimg/hgm/1707x960-1/100/807/polestar-staging-at-volvo-dealership_100807717.jpg" alt="Polestar staging at Volvo dealership" data-srcset="https://cimg1.ibsrv.net/ibimg/hgm/1707x960-1/100/807/polestar-staging-at-volvo-dealership_100807717.jpg 1707w, https://cimg1.ibsrv.net/ibimg/hgm/1024x576-1/100/807/polestar-staging-at-volvo-dealership_100807717.jpg 1024w, https://cimg1.ibsrv.net/ibimg/hgm/824x464-1/100/807/polestar-staging-at-volvo-dealership_100807717.jpg 824w, https://cimg1.ibsrv.net/ibimg/hgm/412x232-1/100/807/polestar-staging-at-volvo-dealership_100807717.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1140160_report-ev-inventories-are-swelling-and-prices-may-drop-soon" class="title">Report: EV inventories are swelling, and prices may drop soon</a>
+</div>
+<div class="item">
+<a class="img-wrap" href="/news/1140147_maverick-hybrid-markup-rolls-royce-ev-tech-rivian-production-the-week-in-reverse">
+<img class="lazy" data-id="100890309" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/2024-rolls-royce-spectre_100890309.jpg" alt="2024 Rolls-Royce Spectre" data-srcset="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/2024-rolls-royce-spectre_100890309.jpg 1920w, https://cimg1.ibsrv.net/ibimg/hgm/1024x576-1/100/890/2024-rolls-royce-spectre_100890309.jpg 1024w, https://cimg1.ibsrv.net/ibimg/hgm/824x464-1/100/890/2024-rolls-royce-spectre_100890309.jpg 824w, https://cimg1.ibsrv.net/ibimg/hgm/412x232-1/100/890/2024-rolls-royce-spectre_100890309.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1140147_maverick-hybrid-markup-rolls-royce-ev-tech-rivian-production-the-week-in-reverse" class="title">Maverick Hybrid markup, Rolls-Royce EV tech, Rivian production: The Week in Reverse</a>
+</div>
+<div class="item">
+<a class="img-wrap" href="/news/1140157_2023-jaguar-i-pace-test-drive-review">
+<img class="lazy" data-id="100890874" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg2.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/jaguar-i-pace_100890874.jpg" alt="2022 Jaguar I-Pace" data-srcset="https://cimg2.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/jaguar-i-pace_100890874.jpg 1920w, https://cimg2.ibsrv.net/ibimg/hgm/1024x576-1/100/890/jaguar-i-pace_100890874.jpg 1024w, https://cimg2.ibsrv.net/ibimg/hgm/824x464-1/100/890/jaguar-i-pace_100890874.jpg 824w, https://cimg2.ibsrv.net/ibimg/hgm/412x232-1/100/890/jaguar-i-pace_100890874.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1140157_2023-jaguar-i-pace-test-drive-review" class="title">Review: 2023 Jaguar I-Pace is a better EV than it was on arrival</a>
+</div>
+</div>
+<a class="red-button" href="/news">View All News Articles</a>
+<div class="bctb-banner lazy-background" data-background="/images/block-background.jpg">
+<div class="overlay no-gradient"></div>
+<div class="site-logo"></div>
+<div class="banner-text">
+<span class="lg-text">Best Car</span>
+<span class="md-text">To Buy</span>
+<span class="sm-text">Check out our editor’s picks</span>
+<a class="red-button" href="/bestcartobuy">View Cars</a>
+</div>
+</div>
+<div class="adv-spacer">
+<div id="ad-a-5"></div>
+</div>
+</div>
+</div>
+<div class="one-column media">
+<div id="latest-videos" class="lazy-background" data-background="/images/block-background.jpg">
+<div class="overlay no-gradient"></div>
+<div class="content-wrap">
+<h2 class="title altername">Latest Videos</h2>
+<div class="swiper-container">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<div class="swiper-image">
+<a href="https://www.youtube.com/watch?v=yXsBcpp5BKs" data-popup="youtube" class="popup-video" title="The $35k Tesla Model 3 still exists—off-menu" data-id="yXsBcpp5BKs" data-video="&lt;iframe id=&quot;videoPlayerYouTube&quot; src=&quot;https://www.youtube.com/embed/yXsBcpp5BKs&quot; width=&quot;auto&quot; height=&quot;auto&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;1&quot;&gt;&lt;/iframe&gt;" data-popup="youtube" data-title="The $35k Tesla Model 3 still exists—off-menu" data-excerpt="When the Testa Model 3 was first announced, much of the excitement around it stemmed from a promised $35,000 base price. But that entry-level Model 3 remains an automotive unicorn. In fact, to get a..." data-url="/news/1127490_the-35k-tesla-model-3-still-exists-off-menu" data-pageview="/video/youtube/yXsBcpp5BKs/the-35k-tesla-model-3-still-exists-off-menu" data-facebook="            &lt;a class=&quot;social-btn fab fa-facebook-f facebook&quot; href=&quot;javascript:void(0)&quot; title=&quot;Share this article on Facebook&quot;
+                onclick=&quot;window.open(&#039;https://www.facebook.com/sharer.php?t=The%20%2435k%20Tesla%20Model%203%20still%20exists%E2%80%94off-menu&amp;u=https%3A%2F%2Fwww.greencarreports.com%2Fnews%2F1127490_the-35k-tesla-model-3-still-exists-off-menu&#039;, &#039;social&#039;, &#039;toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=700, height=300&#039;); hgm.socialShare(&#039;Facebook&#039;, &#039;https://www.greencarreports.com/news/1127490_the-35k-tesla-model-3-still-exists-off-menu&#039;);&quot;&gt;
+            &lt;/a&gt;" data-twitter="            &lt;a class=&quot;social-btn fab fa-twitter twitter&quot; href=&quot;javascript:void(0)&quot; title=&quot;Tweet this article&quot;
+                onclick=&quot;window.open(&#039;https://twitter.com/intent/tweet?text=The%20%2435k%20Tesla%20Model%203%20still%20exists%E2%80%94off-menu&amp;url=https%3A%2F%2Fwww.greencarreports.com%2Fnews%2F1127490_the-35k-tesla-model-3-still-exists-off-menu&#039;, &#039;social&#039;, &#039;toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=700, height=300&#039;); hgm.socialShare(&#039;Twitter&#039;, &#039;https://www.greencarreports.com/news/1127490_the-35k-tesla-model-3-still-exists-off-menu&#039;);&quot;&gt;
+            &lt;/a&gt;" data-email="            &lt;a class=&quot;social-btn far fa-envelope email&quot; href=&quot;javascript:void(0)&quot; title=&quot;Email this article&quot;
+                onclick=&quot;window.open(&#039;mailto:?subject=The%20%2435k%20Tesla%20Model%203%20still%20exists%E2%80%94off-menu&amp;body=Hi%20There%2C%0A%0AI%20thought%20you%20might%20like%20this%20article%3A%0A%0A%20%20%20%20The%20%2435k%20Tesla%20Model%203%20still%20exists%E2%80%94off-menu%0A%20%20%20%20https%3A%2F%2Fwww.greencarreports.com%2Fnews%2F1127490_the-35k-tesla-model-3-still-exists-off-menu%0A%0ACheers%21%0A&#039;, &#039;social&#039;, &#039;toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=700, height=300&#039;); hgm.socialShare(&#039;Email&#039;, &#039;https://www.greencarreports.com/news/1127490_the-35k-tesla-model-3-still-exists-off-menu&#039;);&quot;&gt;
+            &lt;/a&gt;">
+<img class="lazy" data-id="100736265" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/736/2020-tesla-model-3_100736265.jpg" alt="2020 Tesla Model 3" data-srcset="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/736/2020-tesla-model-3_100736265.jpg 1920w, https://cimg1.ibsrv.net/ibimg/hgm/1024x576-1/100/736/2020-tesla-model-3_100736265.jpg 1024w, https://cimg1.ibsrv.net/ibimg/hgm/900x506-1/100/736/2020-tesla-model-3_100736265.jpg 900w, https://cimg1.ibsrv.net/ibimg/hgm/450x253-1/100/736/2020-tesla-model-3_100736265.jpg 450w" sizes="(max-width: 1024px) 313px, calc(100vw - 2rem)">
+<span class="fas fa-play-circle"></span>
+</a>
+</div>
+<div class="video-info">
+<div class="category-label">Electric Cars</div>
+<div class="video-title"><a href="/news/1127490_the-35k-tesla-model-3-still-exists-off-menu">The $35k Tesla Model 3 still exists—off-menu</a></div>
+<div class="video-excerpt"><a href="/news/1127490_the-35k-tesla-model-3-still-exists-off-menu">When the Testa Model 3 was first announced, much of the excitement around it stemmed from a...</a></div>
+<div class="video-author">
+Stephen Edelstein
+<time datetime="2020-03-18T13:30:00+0000">March 18, 2020</time>
+</div>
+<a class="red-button" href="/videos">View All Videos</a>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="swiper-image">
+<a href="https://player.vimeo.com/video/397296716" data-popup="vimeo" class="popup-video" title="Tesla Model Y seats and cargo shown, range nudged to 316 miles" data-id="397296716" data-video="&lt;iframe src=&quot;https://player.vimeo.com/video/397296716&quot; id=&quot;videoPlayerVimeo&quot; width=&quot;auto&quot; height=&quot;auto&quot; frameborder=&quot;0&quot; webkitAllowFullScreen=&quot;1&quot; allowFullScreen=&quot;1&quot;&gt;&lt;/iframe&gt;" data-popup="vimeo" data-title="Tesla Model Y seats and cargo shown, range nudged to 316 miles" data-excerpt="Just before deliveries of the Tesla Model Y began Friday (according to various accounts on Twitter, at least), Tesla showed more views of the interior, and nudged the top EPA range rating up to 316..." data-url="/news/1127453_tesla-model-y-seats-and-cargo-shown-range-nudged-to-316-miles" data-pageview="/video/vimeo/397296716/tesla-model-y-seats-and-cargo-shown-range-nudged-to-316-miles" data-facebook="            &lt;a class=&quot;social-btn fab fa-facebook-f facebook&quot; href=&quot;javascript:void(0)&quot; title=&quot;Share this article on Facebook&quot;
+                onclick=&quot;window.open(&#039;https://www.facebook.com/sharer.php?t=Tesla%20Model%20Y%20seats%20and%20cargo%20shown%2C%20range%20nudged%20to%20316%20miles&amp;u=https%3A%2F%2Fwww.greencarreports.com%2Fnews%2F1127453_tesla-model-y-seats-and-cargo-shown-range-nudged-to-316-miles&#039;, &#039;social&#039;, &#039;toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=700, height=300&#039;); hgm.socialShare(&#039;Facebook&#039;, &#039;https://www.greencarreports.com/news/1127453_tesla-model-y-seats-and-cargo-shown-range-nudged-to-316-miles&#039;);&quot;&gt;
+            &lt;/a&gt;" data-twitter="            &lt;a class=&quot;social-btn fab fa-twitter twitter&quot; href=&quot;javascript:void(0)&quot; title=&quot;Tweet this article&quot;
+                onclick=&quot;window.open(&#039;https://twitter.com/intent/tweet?text=Tesla%20Model%20Y%20seats%20and%20cargo%20shown%2C%20range%20nudged%20to%20316%20miles&amp;url=https%3A%2F%2Fwww.greencarreports.com%2Fnews%2F1127453_tesla-model-y-seats-and-cargo-shown-range-nudged-to-316-miles&#039;, &#039;social&#039;, &#039;toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=700, height=300&#039;); hgm.socialShare(&#039;Twitter&#039;, &#039;https://www.greencarreports.com/news/1127453_tesla-model-y-seats-and-cargo-shown-range-nudged-to-316-miles&#039;);&quot;&gt;
+            &lt;/a&gt;" data-email="            &lt;a class=&quot;social-btn far fa-envelope email&quot; href=&quot;javascript:void(0)&quot; title=&quot;Email this article&quot;
+                onclick=&quot;window.open(&#039;mailto:?subject=Tesla%20Model%20Y%20seats%20and%20cargo%20shown%2C%20range%20nudged%20to%20316%20miles&amp;body=Hi%20There%2C%0A%0AI%20thought%20you%20might%20like%20this%20article%3A%0A%0A%20%20%20%20Tesla%20Model%20Y%20seats%20and%20cargo%20shown%2C%20range%20nudged%20to%20316%20miles%0A%20%20%20%20https%3A%2F%2Fwww.greencarreports.com%2Fnews%2F1127453_tesla-model-y-seats-and-cargo-shown-range-nudged-to-316-miles%0A%0ACheers%21%0A&#039;, &#039;social&#039;, &#039;toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=700, height=300&#039;); hgm.socialShare(&#039;Email&#039;, &#039;https://www.greencarreports.com/news/1127453_tesla-model-y-seats-and-cargo-shown-range-nudged-to-316-miles&#039;);&quot;&gt;
+            &lt;/a&gt;">
+<img class="lazy" data-id="100695316" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg0.ibsrv.net/ibimg/hgm/1920x1080-1/100/695/tesla-model-y_100695316.jpg" alt="Tesla Model Y" data-srcset="https://cimg0.ibsrv.net/ibimg/hgm/1920x1080-1/100/695/tesla-model-y_100695316.jpg 1920w, https://cimg0.ibsrv.net/ibimg/hgm/1024x576-1/100/695/tesla-model-y_100695316.jpg 1024w, https://cimg0.ibsrv.net/ibimg/hgm/900x506-1/100/695/tesla-model-y_100695316.jpg 900w, https://cimg0.ibsrv.net/ibimg/hgm/450x253-1/100/695/tesla-model-y_100695316.jpg 450w" sizes="(max-width: 1024px) 313px, calc(100vw - 2rem)">
+<span class="fas fa-play-circle"></span>
+</a>
+</div>
+<div class="video-info">
+<div class="category-label">Electric Cars</div>
+<div class="video-title"><a href="/news/1127453_tesla-model-y-seats-and-cargo-shown-range-nudged-to-316-miles">Tesla Model Y seats and cargo shown, range nudged to 316 miles</a></div>
+<div class="video-excerpt"><a href="/news/1127453_tesla-model-y-seats-and-cargo-shown-range-nudged-to-316-miles">Just before deliveries of the Tesla Model Y began Friday (according to various accounts on Twitter...</a></div>
+<div class="video-author">
+Stephen Edelstein
+<time datetime="2020-03-15T12:00:00+0000">March 15, 2020</time>
+</div>
+<a class="red-button" href="/videos">View All Videos</a>
+</div>
+</div>
+<div class="swiper-slide">
+<div class="swiper-image">
+<a href="https://www.youtube.com/watch?v=JGPwwUDjsfM" data-popup="youtube" class="popup-video" title="Fisker Ocean electric crossover: Charging details, new driving footage" data-id="JGPwwUDjsfM" data-video="&lt;iframe id=&quot;videoPlayerYouTube&quot; src=&quot;https://www.youtube.com/embed/JGPwwUDjsfM&quot; width=&quot;auto&quot; height=&quot;auto&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;1&quot;&gt;&lt;/iframe&gt;" data-popup="youtube" data-title="Fisker Ocean electric crossover: Charging details, new driving footage" data-excerpt="Details of the 2022 Fisker Ocean electric crossover continue to dribble out ahead of a planned start of production in late 2021&amp;mdash;with production by a as-yet-unannounced partner. The latest..." data-url="/news/1127317_fisker-ocean-electric-crossover-charging-details-new-driving-footage" data-pageview="/video/youtube/JGPwwUDjsfM/fisker-ocean-electric-crossover-charging-details-new-driving-footage" data-facebook="            &lt;a class=&quot;social-btn fab fa-facebook-f facebook&quot; href=&quot;javascript:void(0)&quot; title=&quot;Share this article on Facebook&quot;
+                onclick=&quot;window.open(&#039;https://www.facebook.com/sharer.php?t=Fisker%20Ocean%20electric%20crossover%3A%20Charging%20details%2C%20new%20driving%20footage&amp;u=https%3A%2F%2Fwww.greencarreports.com%2Fnews%2F1127317_fisker-ocean-electric-crossover-charging-details-new-driving-footage&#039;, &#039;social&#039;, &#039;toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=700, height=300&#039;); hgm.socialShare(&#039;Facebook&#039;, &#039;https://www.greencarreports.com/news/1127317_fisker-ocean-electric-crossover-charging-details-new-driving-footage&#039;);&quot;&gt;
+            &lt;/a&gt;" data-twitter="            &lt;a class=&quot;social-btn fab fa-twitter twitter&quot; href=&quot;javascript:void(0)&quot; title=&quot;Tweet this article&quot;
+                onclick=&quot;window.open(&#039;https://twitter.com/intent/tweet?text=Fisker%20Ocean%20electric%20crossover%3A%20Charging%20details%2C%20new%20driving%20footage&amp;url=https%3A%2F%2Fwww.greencarreports.com%2Fnews%2F1127317_fisker-ocean-electric-crossover-charging-details-new-driving-footage&#039;, &#039;social&#039;, &#039;toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=700, height=300&#039;); hgm.socialShare(&#039;Twitter&#039;, &#039;https://www.greencarreports.com/news/1127317_fisker-ocean-electric-crossover-charging-details-new-driving-footage&#039;);&quot;&gt;
+            &lt;/a&gt;" data-email="            &lt;a class=&quot;social-btn far fa-envelope email&quot; href=&quot;javascript:void(0)&quot; title=&quot;Email this article&quot;
+                onclick=&quot;window.open(&#039;mailto:?subject=Fisker%20Ocean%20electric%20crossover%3A%20Charging%20details%2C%20new%20driving%20footage&amp;body=Hi%20There%2C%0A%0AI%20thought%20you%20might%20like%20this%20article%3A%0A%0A%20%20%20%20Fisker%20Ocean%20electric%20crossover%3A%20Charging%20details%2C%20new%20driving%20footage%0A%20%20%20%20https%3A%2F%2Fwww.greencarreports.com%2Fnews%2F1127317_fisker-ocean-electric-crossover-charging-details-new-driving-footage%0A%0ACheers%21%0A&#039;, &#039;social&#039;, &#039;toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=700, height=300&#039;); hgm.socialShare(&#039;Email&#039;, &#039;https://www.greencarreports.com/news/1127317_fisker-ocean-electric-crossover-charging-details-new-driving-footage&#039;);&quot;&gt;
+            &lt;/a&gt;">
+<img class="lazy" data-id="100738427" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/738/fisker-ocean_100738427.jpg" alt="Fisker Ocean" data-srcset="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/738/fisker-ocean_100738427.jpg 1920w, https://cimg3.ibsrv.net/ibimg/hgm/1024x576-1/100/738/fisker-ocean_100738427.jpg 1024w, https://cimg3.ibsrv.net/ibimg/hgm/900x506-1/100/738/fisker-ocean_100738427.jpg 900w, https://cimg3.ibsrv.net/ibimg/hgm/450x253-1/100/738/fisker-ocean_100738427.jpg 450w" sizes="(max-width: 1024px) 313px, calc(100vw - 2rem)">
+<span class="fas fa-play-circle"></span>
+</a>
+</div>
+<div class="video-info">
+<div class="category-label">Electric Cars</div>
+<div class="video-title"><a href="/news/1127317_fisker-ocean-electric-crossover-charging-details-new-driving-footage">Fisker Ocean electric crossover: Charging details, new driving footage</a></div>
+<div class="video-excerpt"><a href="/news/1127317_fisker-ocean-electric-crossover-charging-details-new-driving-footage">Details of the 2022 Fisker Ocean electric crossover continue to dribble out ahead of a planned...</a></div>
+<div class="video-author">
+Stephen Edelstein
+<time datetime="2020-03-03T13:00:00+0000">March 3, 2020</time>
+</div>
+<a class="red-button" href="/videos">View All Videos</a>
+</div>
+</div>
+</div>
+</div>
+<div class="pagination-container">
+<div class="swiper-prev">&lt;</div>
+<div class="swiper-counter"></div>
+<div class="swiper-next">&gt;</div>
+</div>
+</div>
+</div>
+<div class="content-wrap">
+<div id="more-article-wrapper">
+<h2 class="title">More Articles</h2>
+<div class="media-grid">
+<div class="item left">
+<a class="img-wrap" href="/news/1140146_fisker-points-to-suppliers-in-slow-production-ramp-of-ocean-ev">
+<img class="lazy" data-id="100830826" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg2.ibsrv.net/ibimg/hgm/1024x576-1/100/830/2023-fisker-ocean-pre-production-at-magna-steyr-plant-in-graz-austria_100830826.jpg" alt="2023 Fisker Ocean pre-production at Magna Steyr plant in Graz, Austria" data-srcset="https://cimg2.ibsrv.net/ibimg/hgm/1024x576-1/100/830/2023-fisker-ocean-pre-production-at-magna-steyr-plant-in-graz-austria_100830826.jpg 1024w, https://cimg2.ibsrv.net/ibimg/hgm/824x464-1/100/830/2023-fisker-ocean-pre-production-at-magna-steyr-plant-in-graz-austria_100830826.jpg 824w, https://cimg2.ibsrv.net/ibimg/hgm/412x232-1/100/830/2023-fisker-ocean-pre-production-at-magna-steyr-plant-in-graz-austria_100830826.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1140146_fisker-points-to-suppliers-in-slow-production-ramp-of-ocean-ev" class="title">Fisker points to suppliers in slow production ramp of Ocean EV</a>
+</div>
+<div class="item middle">
+<a class="img-wrap" href="/news/1140145_mercedes-benz-shifts-to-tesla-charging-port-for-north-america">
+<img class="lazy" data-id="100890765" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/mercedes-benz-amg-eqe-sedan-at-tesla-supercharger-station_100890765.jpg" alt="Mercedes-Benz AMG EQE sedan at Tesla Supercharger station" data-srcset="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/mercedes-benz-amg-eqe-sedan-at-tesla-supercharger-station_100890765.jpg 1920w, https://cimg1.ibsrv.net/ibimg/hgm/1024x576-1/100/890/mercedes-benz-amg-eqe-sedan-at-tesla-supercharger-station_100890765.jpg 1024w, https://cimg1.ibsrv.net/ibimg/hgm/824x464-1/100/890/mercedes-benz-amg-eqe-sedan-at-tesla-supercharger-station_100890765.jpg 824w, https://cimg1.ibsrv.net/ibimg/hgm/412x232-1/100/890/mercedes-benz-amg-eqe-sedan-at-tesla-supercharger-station_100890765.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1140145_mercedes-benz-shifts-to-tesla-charging-port-for-north-america" class="title">Mercedes-Benz shifts to Tesla charging port for North America</a>
+</div>
+<div class="item left">
+<a class="img-wrap" href="/news/1140147_maverick-hybrid-markup-rolls-royce-ev-tech-rivian-production-the-week-in-reverse">
+<img class="lazy" data-id="100890309" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/2024-rolls-royce-spectre_100890309.jpg" alt="2024 Rolls-Royce Spectre" data-srcset="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/2024-rolls-royce-spectre_100890309.jpg 1920w, https://cimg1.ibsrv.net/ibimg/hgm/1024x576-1/100/890/2024-rolls-royce-spectre_100890309.jpg 1024w, https://cimg1.ibsrv.net/ibimg/hgm/824x464-1/100/890/2024-rolls-royce-spectre_100890309.jpg 824w, https://cimg1.ibsrv.net/ibimg/hgm/412x232-1/100/890/2024-rolls-royce-spectre_100890309.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1140147_maverick-hybrid-markup-rolls-royce-ev-tech-rivian-production-the-week-in-reverse" class="title">Maverick Hybrid markup, Rolls-Royce EV tech, Rivian production: The Week in Reverse</a>
+</div>
+<div class="item">
+<a class="img-wrap" href="/news/1140143_ford-maverick-hybrid-surcharge-tesla-unintended-acceleration-gm-vs-epa-ev-targets-today-s-car-news">
+<img class="lazy" data-id="100848345" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/848/2024-chevrolet-blazer-ev_100848345.jpg" alt="2024 Chevrolet Blazer EV SS" data-srcset="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/848/2024-chevrolet-blazer-ev_100848345.jpg 1920w, https://cimg1.ibsrv.net/ibimg/hgm/1024x576-1/100/848/2024-chevrolet-blazer-ev_100848345.jpg 1024w, https://cimg1.ibsrv.net/ibimg/hgm/824x464-1/100/848/2024-chevrolet-blazer-ev_100848345.jpg 824w, https://cimg1.ibsrv.net/ibimg/hgm/412x232-1/100/848/2024-chevrolet-blazer-ev_100848345.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1140143_ford-maverick-hybrid-surcharge-tesla-unintended-acceleration-gm-vs-epa-ev-targets-today-s-car-news" class="title">Ford Maverick Hybrid surcharge, Tesla unintended acceleration, GM vs. EPA EV targets: Today’s Car News</a>
+</div>
+<div class="item middle left">
+<a class="img-wrap" href="/news/1140142_2024-ford-maverick-no-longer-starts-with-37-mpg-hybrid-version">
+<img class="lazy" data-id="100859974" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg2.ibsrv.net/ibimg/hgm/2000x1125-1/100/859/2023-ford-maverick_100859974.jpg" alt="2023 Ford Maverick" data-srcset="https://cimg2.ibsrv.net/ibimg/hgm/2000x1125-1/100/859/2023-ford-maverick_100859974.jpg 2000w, https://cimg2.ibsrv.net/ibimg/hgm/1024x576-1/100/859/2023-ford-maverick_100859974.jpg 1024w, https://cimg2.ibsrv.net/ibimg/hgm/824x464-1/100/859/2023-ford-maverick_100859974.jpg 824w, https://cimg2.ibsrv.net/ibimg/hgm/412x232-1/100/859/2023-ford-maverick_100859974.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1140142_2024-ford-maverick-no-longer-starts-with-37-mpg-hybrid-version" class="title">2024 Ford Maverick no longer starts with 37-mpg hybrid version</a>
+</div>
+<div class="item">
+<a class="img-wrap" href="/news/1140134_gm-has-issues-with-epa-rules-seeking-50-evs-by-2030">
+<img class="lazy" data-id="100887170" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg2.ibsrv.net/ibimg/hgm/1920x1080-1/100/887/cadillac-lyriq_100887170.jpg" alt="2024 Cadillac Lyriq" data-srcset="https://cimg2.ibsrv.net/ibimg/hgm/1920x1080-1/100/887/cadillac-lyriq_100887170.jpg 1920w, https://cimg2.ibsrv.net/ibimg/hgm/1024x576-1/100/887/cadillac-lyriq_100887170.jpg 1024w, https://cimg2.ibsrv.net/ibimg/hgm/824x464-1/100/887/cadillac-lyriq_100887170.jpg 824w, https://cimg2.ibsrv.net/ibimg/hgm/412x232-1/100/887/cadillac-lyriq_100887170.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1140134_gm-has-issues-with-epa-rules-seeking-50-evs-by-2030" class="title">GM has issues with EPA rules seeking 50% EVs by 2030</a>
+</div>
+<div class="item left">
+<a class="img-wrap" href="/news/1140133_nhtsa-reopens-investigation-into-tesla-unintended-acceleration">
+<img class="lazy" data-id="100875199" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/875/tesla-supercharger_100875199.jpg" alt="Tesla Supercharger" data-srcset="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/875/tesla-supercharger_100875199.jpg 1920w, https://cimg3.ibsrv.net/ibimg/hgm/1024x576-1/100/875/tesla-supercharger_100875199.jpg 1024w, https://cimg3.ibsrv.net/ibimg/hgm/824x464-1/100/875/tesla-supercharger_100875199.jpg 824w, https://cimg3.ibsrv.net/ibimg/hgm/412x232-1/100/875/tesla-supercharger_100875199.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1140133_nhtsa-reopens-investigation-into-tesla-unintended-acceleration" class="title">NHTSA reopens investigation into Tesla unintended acceleration</a>
+</div>
+<div class="item middle">
+<a class="img-wrap" href="/news/1140131_vw-id-buzz-test-fiat-evs-stellantis-ev-platform-for-europe-today-s-car-news">
+<img class="lazy" data-id="100887943" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/887/2024-fiat-topolino_100887943.jpg" alt="2024 Fiat Topolino" data-srcset="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/887/2024-fiat-topolino_100887943.jpg 1920w, https://cimg3.ibsrv.net/ibimg/hgm/1024x576-1/100/887/2024-fiat-topolino_100887943.jpg 1024w, https://cimg3.ibsrv.net/ibimg/hgm/824x464-1/100/887/2024-fiat-topolino_100887943.jpg 824w, https://cimg3.ibsrv.net/ibimg/hgm/412x232-1/100/887/2024-fiat-topolino_100887943.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1140131_vw-id-buzz-test-fiat-evs-stellantis-ev-platform-for-europe-today-s-car-news" class="title">VW ID.Buzz test, Fiat EVs, Stellantis’ EV platform for Europe: Today’s Car News</a>
+</div>
+<div class="item left">
+<a class="img-wrap" href="/news/1140130_id-buzz-electric-van-is-the-face-of-vws-us-autonomous-test-fleet">
+<img class="lazy" data-id="100890659" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/volkswagen_100890659.jpg" alt="VW ID.Buzz autonomous test vehicle in Austin" data-srcset="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/volkswagen_100890659.jpg 1920w, https://cimg3.ibsrv.net/ibimg/hgm/1024x576-1/100/890/volkswagen_100890659.jpg 1024w, https://cimg3.ibsrv.net/ibimg/hgm/824x464-1/100/890/volkswagen_100890659.jpg 824w, https://cimg3.ibsrv.net/ibimg/hgm/412x232-1/100/890/volkswagen_100890659.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1140130_id-buzz-electric-van-is-the-face-of-vws-us-autonomous-test-fleet" class="title">ID.Buzz electric van is the face of VW’s US autonomous test fleet</a>
+</div>
+</div>
+<div id="newsletter-and-ad">
+<div class="newsletter-signup  rail-box ">
+<h3>Green Car Reports Newsletter</h3>
+<p>
+Sign up to get the latest green car and environmental news, delivered to your inbox daily!
+</p>
+<form data-pos="square" class="newsletter-signup-form" action="/api/newsletter-subscribe" method="post">
+<input class="newsletter-email" type="email" name="email" placeholder="Enter your email address…" required data-msg="Email is required">
+<button class="red-button newsletter-signup-btn" type="submit">Sign Up Today!</button>
+<div class="response_message"></div>
+</form>
+<p>
+I agree to receive emails from Green Car Reports. I understand that I can unsubscribe at any time. <a href="http://www.internetbrands.com/privacy/privacy-main.html" target="_blank">Privacy Policy.</a>
+</p>
+</div>
+<div class="item ad">
+<div id="ad-a-6"></div>
+</div>
+</div>
+<div class="media-grid">
+<div class="item left">
+<a class="img-wrap" href="/news/1140121_fiat-600e-topolino-europe-500e-ev-us-bound">
+<img class="lazy" data-id="100890511" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/fiat_100890511.jpg" alt="2024 Fiat 600e" data-srcset="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/fiat_100890511.jpg 1920w, https://cimg3.ibsrv.net/ibimg/hgm/1024x576-1/100/890/fiat_100890511.jpg 1024w, https://cimg3.ibsrv.net/ibimg/hgm/824x464-1/100/890/fiat_100890511.jpg 824w, https://cimg3.ibsrv.net/ibimg/hgm/412x232-1/100/890/fiat_100890511.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1140121_fiat-600e-topolino-europe-500e-ev-us-bound" class="title">Fiat shows 600e and tiny Topolino for Europe, 500e EV still US-bound</a>
+</div>
+<div class="item middle">
+<a class="img-wrap" href="/news/1140120_stellantis-details-platform-for-mid-size-evs-starting-with-europe">
+<img class="lazy" data-id="100890614" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg2.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/stellantis-stla-medium-platform_100890614.jpg" alt="Stellantis STLA Medium platform" data-srcset="https://cimg2.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/stellantis-stla-medium-platform_100890614.jpg 1920w, https://cimg2.ibsrv.net/ibimg/hgm/1024x576-1/100/890/stellantis-stla-medium-platform_100890614.jpg 1024w, https://cimg2.ibsrv.net/ibimg/hgm/824x464-1/100/890/stellantis-stla-medium-platform_100890614.jpg 824w, https://cimg2.ibsrv.net/ibimg/hgm/412x232-1/100/890/stellantis-stla-medium-platform_100890614.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1140120_stellantis-details-platform-for-mid-size-evs-starting-with-europe" class="title">Stellantis details platform for mid-size EVs, starting with Europe</a>
+</div>
+<div class="item left">
+<a class="img-wrap" href="/news/1140119_rolls-royce-ev-review-airless-tire-test-gm-battery-smarts-rivian-production-today-s-car-news">
+<img class="lazy" data-id="100890329" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/2024-rolls-royce-spectre_100890329.jpg" alt="2024 Rolls-Royce Spectre" data-srcset="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/2024-rolls-royce-spectre_100890329.jpg 1920w, https://cimg1.ibsrv.net/ibimg/hgm/1024x576-1/100/890/2024-rolls-royce-spectre_100890329.jpg 1024w, https://cimg1.ibsrv.net/ibimg/hgm/824x464-1/100/890/2024-rolls-royce-spectre_100890329.jpg 824w, https://cimg1.ibsrv.net/ibimg/hgm/412x232-1/100/890/2024-rolls-royce-spectre_100890329.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1140119_rolls-royce-ev-review-airless-tire-test-gm-battery-smarts-rivian-production-today-s-car-news" class="title">Rolls-Royce EV review, airless tire test, GM battery smarts, Rivian production: Today’s Car News</a>
+</div>
+<div class="item">
+<a class="img-wrap" href="/news/1140110_french-postal-vans-will-test-michelin-airless-tires">
+<img class="lazy" data-id="100890304" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg0.ibsrv.net/ibimg/hgm/1600x900-1/100/890/michelin-uptis-airless-tire-on-french-postal-van_100890304.jpg" alt="Michelin Uptis airless tire on French postal van" data-srcset="https://cimg0.ibsrv.net/ibimg/hgm/1600x900-1/100/890/michelin-uptis-airless-tire-on-french-postal-van_100890304.jpg 1600w, https://cimg0.ibsrv.net/ibimg/hgm/1024x576-1/100/890/michelin-uptis-airless-tire-on-french-postal-van_100890304.jpg 1024w, https://cimg0.ibsrv.net/ibimg/hgm/824x464-1/100/890/michelin-uptis-airless-tire-on-french-postal-van_100890304.jpg 824w, https://cimg0.ibsrv.net/ibimg/hgm/412x232-1/100/890/michelin-uptis-airless-tire-on-french-postal-van_100890304.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1140110_french-postal-vans-will-test-michelin-airless-tires" class="title">French postal vans will test Michelin airless tires</a>
+</div>
+<div class="item middle left">
+<a class="img-wrap" href="/news/1140094_gm-acquires-more-smarts-for-ev-battery-health">
+<img class="lazy" data-id="100872573" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg1.ibsrv.net/ibimg/hgm/2000x1125-1/100/872/gm-electric-pickup-silhouette--from-2020-ultium-platform-preview_100872573.jpg" alt="GM electric pickup silhouette  -  from 2020 Ultium platform preview" data-srcset="https://cimg1.ibsrv.net/ibimg/hgm/2000x1125-1/100/872/gm-electric-pickup-silhouette--from-2020-ultium-platform-preview_100872573.jpg 2000w, https://cimg1.ibsrv.net/ibimg/hgm/1024x576-1/100/872/gm-electric-pickup-silhouette--from-2020-ultium-platform-preview_100872573.jpg 1024w, https://cimg1.ibsrv.net/ibimg/hgm/824x464-1/100/872/gm-electric-pickup-silhouette--from-2020-ultium-platform-preview_100872573.jpg 824w, https://cimg1.ibsrv.net/ibimg/hgm/412x232-1/100/872/gm-electric-pickup-silhouette--from-2020-ultium-platform-preview_100872573.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1140094_gm-acquires-more-smarts-for-ev-battery-health" class="title">GM acquires more smarts for EV battery health</a>
+</div>
+<div class="item">
+<a class="img-wrap" href="/news/1140112_bespoke-electric-how-the-first-rolls-royce-ev-took-form">
+<img class="lazy" data-id="100890473" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/2024-rolls-royce-spectre_100890473.jpg" alt="2024 Rolls-Royce Spectre" data-srcset="https://cimg1.ibsrv.net/ibimg/hgm/1920x1080-1/100/890/2024-rolls-royce-spectre_100890473.jpg 1920w, https://cimg1.ibsrv.net/ibimg/hgm/1024x576-1/100/890/2024-rolls-royce-spectre_100890473.jpg 1024w, https://cimg1.ibsrv.net/ibimg/hgm/824x464-1/100/890/2024-rolls-royce-spectre_100890473.jpg 824w, https://cimg1.ibsrv.net/ibimg/hgm/412x232-1/100/890/2024-rolls-royce-spectre_100890473.jpg 412w" sizes="(max-width: 1300px) 412px, calc(100vw - 2rem)">
+</a>
+<a href="/news/1140112_bespoke-electric-how-the-first-rolls-royce-ev-took-form" class="title">Bespoke, electric: How the first Rolls-Royce EV took form</a>
+</div>
+</div>
+<a class="red-button" href="/news">View All News Articles</a>
+</div>
+</div>
+<div class="content-wrap">
+<div class="bctb-carousel">
+<div class="swiper-container">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<img class="lazy" data-id="100871116" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg0.ibsrv.net/ibimg/hgm/1280x720-1/100/871/ford-f-150-lightning-green-car-reports-best-car-to-buy-2023_100871116.jpg" alt="Ford F-150 Lightning: Green Car Reports Best Car To Buy 2023" data-srcset="https://cimg0.ibsrv.net/ibimg/hgm/1280x720-1/100/871/ford-f-150-lightning-green-car-reports-best-car-to-buy-2023_100871116.jpg 1280w, https://cimg0.ibsrv.net/ibimg/hgm/1200x675-1/100/871/ford-f-150-lightning-green-car-reports-best-car-to-buy-2023_100871116.jpg 1200w, https://cimg0.ibsrv.net/ibimg/hgm/600x338-1/100/871/ford-f-150-lightning-green-car-reports-best-car-to-buy-2023_100871116.jpg 600w" sizes="(max-width: 440px) 600px, calc(100vw - 2rem)">
+<div class="overlay no-gradient"></div>
+<div class="slide-info">
+<div class="bctb-article-title"><span>Ford F-150 Lightning: </span> Green Car Reports&rsquo; Best Car to Buy 2023</div>
+<div class="bctb-article-excerpt"><img class="quote" src="/images/quote.svg">Ford has revolutionized the pickup truck&mdash;by making a fully electric version of its...</div>
+<a class="red-button" href="/news/1138166_ford-f-150-lightning-green-car-reports-best-car-to-buy-2023">Read Article</a>
+</div>
+</div>
+<div class="swiper-slide">
+<img class="lazy" data-id="100823634" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg2.ibsrv.net/ibimg/hgm/1920x1080-1/100/823/lucid-air-green-car-reports-best-car-to-buy-2022_100823634.jpg" alt="Lucid Air: Green Car Reports Best Car To Buy 2022" data-srcset="https://cimg2.ibsrv.net/ibimg/hgm/1920x1080-1/100/823/lucid-air-green-car-reports-best-car-to-buy-2022_100823634.jpg 1920w, https://cimg2.ibsrv.net/ibimg/hgm/1200x675-1/100/823/lucid-air-green-car-reports-best-car-to-buy-2022_100823634.jpg 1200w, https://cimg2.ibsrv.net/ibimg/hgm/600x338-1/100/823/lucid-air-green-car-reports-best-car-to-buy-2022_100823634.jpg 600w" sizes="(max-width: 440px) 600px, calc(100vw - 2rem)">
+<div class="overlay no-gradient"></div>
+<div class="slide-info">
+<div class="bctb-article-title"><span>Lucid Air: </span> Green Car Reports&rsquo; Best Car to Buy 2022</div>
+<div class="bctb-article-excerpt"><img class="quote" src="/images/quote.svg">California&rsquo;s Lucid has raised the bar for electric vehicles in ways that matter for...</div>
+<a class="red-button" href="/news/1134472_lucid-air-green-car-reports-best-car-to-buy-2022">Read Article</a>
+</div>
+</div>
+<div class="swiper-slide">
+<img class="lazy" data-id="100774022" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg2.ibsrv.net/ibimg/hgm/1920x1080-1/100/774/2021-ford-mustang-mach-e_100774022.jpg" alt="2021 Ford Mustang Mach-E first drive  -  Portland, OR" data-srcset="https://cimg2.ibsrv.net/ibimg/hgm/1920x1080-1/100/774/2021-ford-mustang-mach-e_100774022.jpg 1920w, https://cimg2.ibsrv.net/ibimg/hgm/1200x675-1/100/774/2021-ford-mustang-mach-e_100774022.jpg 1200w, https://cimg2.ibsrv.net/ibimg/hgm/600x338-1/100/774/2021-ford-mustang-mach-e_100774022.jpg 600w" sizes="(max-width: 440px) 600px, calc(100vw - 2rem)">
+<div class="overlay no-gradient"></div>
+<div class="slide-info">
+<div class="bctb-article-title"><span>Ford Mustang Mach-E: </span> Green Car Reports&rsquo; Best Car to Buy 2021</div>
+<div class="bctb-article-excerpt"><img class="quote" src="/images/quote.svg">A Mustang as the most important new green car of the year? That might have been our reaction prior...</div>
+<a class="red-button" href="/news/1130713_ford-mustang-mach-e-green-car-reports-best-car-to-buy-2021">Read Article</a>
+</div>
+</div>
+<div class="swiper-slide">
+<img class="lazy" data-id="100727110" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg2.ibsrv.net/ibimg/hgm/1905x1072-1/100/727/2019-audi-e-tron_100727110.jpg" alt="2019 Audi E-Tron - Best Car To Buy 2020" data-srcset="https://cimg2.ibsrv.net/ibimg/hgm/1905x1072-1/100/727/2019-audi-e-tron_100727110.jpg 1905w, https://cimg2.ibsrv.net/ibimg/hgm/1200x675-1/100/727/2019-audi-e-tron_100727110.jpg 1200w, https://cimg2.ibsrv.net/ibimg/hgm/600x338-1/100/727/2019-audi-e-tron_100727110.jpg 600w" sizes="(max-width: 440px) 600px, calc(100vw - 2rem)">
+<div class="overlay no-gradient"></div>
+<div class="slide-info">
+<div class="bctb-article-title"><span>Audi E-Tron: </span> Green Car Reports&rsquo; Best Car to Buy 2020</div>
+<div class="bctb-article-excerpt"><img class="quote" src="/images/quote.svg">The Audi E-Tron is Green Car Reports&rsquo; Best Car To Buy 2020. We can&rsquo;t think of a single...</div>
+<a class="red-button" href="/news/1126522_audi-e-tron-green-car-reports-best-car-to-buy-2020">Read Article</a>
+</div>
+</div>
+<div class="swiper-slide">
+<img class="lazy" data-id="100676009" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg1.ibsrv.net/ibimg/hgm/1024x576-1/100/676/2018-tesla-model-3_100676009.jpg" alt="2018 Tesla Model 3" data-srcset="https://cimg1.ibsrv.net/ibimg/hgm/1024x576-1/100/676/2018-tesla-model-3_100676009.jpg 1024w, https://cimg1.ibsrv.net/ibimg/hgm/600x338-1/100/676/2018-tesla-model-3_100676009.jpg 600w" sizes="(max-width: 440px) 600px, calc(100vw - 2rem)">
+<div class="overlay no-gradient"></div>
+<div class="slide-info">
+<div class="bctb-article-title"><span>Tesla Model 3: </span> Green Car Reports&rsquo; Best Car to Buy 2019</div>
+<div class="bctb-article-excerpt"><img class="quote" src="/images/quote.svg">The Tesla Model 3 is Green Car Reports' Best Car To Buy 2019. It&rsquo;s the second time a Tesla...</div>
+<a class="red-button" href="/news/1119852_green-car-reports-best-car-to-buy-2019-tesla-model-3">Read Article</a>
+</div>
+</div>
+<div class="swiper-slide">
+<img class="lazy" data-id="100632819" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/632/2018-chrysler-pacifica-hybrid_100632819.jpg" alt="2018 Chrysler Pacifica Hybrid" data-srcset="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/632/2018-chrysler-pacifica-hybrid_100632819.jpg 1920w, https://cimg3.ibsrv.net/ibimg/hgm/1200x675-1/100/632/2018-chrysler-pacifica-hybrid_100632819.jpg 1200w, https://cimg3.ibsrv.net/ibimg/hgm/600x338-1/100/632/2018-chrysler-pacifica-hybrid_100632819.jpg 600w" sizes="(max-width: 440px) 600px, calc(100vw - 2rem)">
+<div class="overlay no-gradient"></div>
+<div class="slide-info">
+<div class="bctb-article-title"><span>Chrysler Pacifica: </span> Green Car Reports&rsquo; Best Car to Buy 2018</div>
+<div class="bctb-article-excerpt"><img class="quote" src="/images/quote.svg">In 2011, Green Car Reports launched an award for the new car, or family of cars, that represented...</div>
+<a class="red-button" href="/news/1113595_green-car-reports-best-car-to-buy-2018-chrysler-pacifica-hybrid-plug-in-minivan">Read Article</a>
+</div>
+</div>
+<div class="swiper-slide">
+<img class="lazy" data-id="100564927" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/564/2017-chevrolet-bolt-ev-road-test-california-coastline-aug-2016_100564927.jpg" alt="2017 Chevrolet Bolt EV, road test, California coastline, Sep 2016" data-srcset="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/564/2017-chevrolet-bolt-ev-road-test-california-coastline-aug-2016_100564927.jpg 1920w, https://cimg3.ibsrv.net/ibimg/hgm/1200x675-1/100/564/2017-chevrolet-bolt-ev-road-test-california-coastline-aug-2016_100564927.jpg 1200w, https://cimg3.ibsrv.net/ibimg/hgm/600x338-1/100/564/2017-chevrolet-bolt-ev-road-test-california-coastline-aug-2016_100564927.jpg 600w" sizes="(max-width: 440px) 600px, calc(100vw - 2rem)">
+<div class="overlay no-gradient"></div>
+<div class="slide-info">
+<div class="bctb-article-title"><span>Chevrolet Bolt EV: </span> Green Car Reports&rsquo; Best Car to Buy 2017</div>
+<div class="bctb-article-excerpt"><img class="quote" src="/images/quote.svg">Each year, Green Car Reports chooses a new car, or a family of cars, as the best green car...</div>
+<a class="red-button" href="/news/1106584_chevrolet-bolt-ev-green-car-reports-best-car-to-buy-2017">Read Article</a>
+</div>
+</div>
+<div class="swiper-slide">
+<img class="lazy" data-id="100525017" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg1.ibsrv.net/ibimg/hgm/1600x900-1/100/525/2016-chevrolet-volt-first-drive-in-california-july-2015_100525017.jpg" alt="2016 Chevrolet Volt, first drive in California, July 2015" data-srcset="https://cimg1.ibsrv.net/ibimg/hgm/1600x900-1/100/525/2016-chevrolet-volt-first-drive-in-california-july-2015_100525017.jpg 1600w, https://cimg1.ibsrv.net/ibimg/hgm/1200x675-1/100/525/2016-chevrolet-volt-first-drive-in-california-july-2015_100525017.jpg 1200w, https://cimg1.ibsrv.net/ibimg/hgm/600x338-1/100/525/2016-chevrolet-volt-first-drive-in-california-july-2015_100525017.jpg 600w" sizes="(max-width: 440px) 600px, calc(100vw - 2rem)">
+<div class="overlay no-gradient"></div>
+<div class="slide-info">
+<div class="bctb-article-title"><span>Chevrolet Volt: </span> Green Car Reports&rsquo; Best Car to Buy 2016</div>
+<div class="bctb-article-excerpt"><img class="quote" src="/images/quote.svg">Every year, Green Car Reports picks a new car or model line that we feel is the best green car for...</div>
+<a class="red-button" href="/news/1101422_chevrolet-volt-green-car-reports-best-car-to-buy-2016">Read Article</a>
+</div>
+</div>
+<div class="swiper-slide">
+<img class="lazy" data-id="100469091" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/469/2015-volkswagen-golf_100469091.jpg" alt="2015 Volkswagen Golf TDI SE" data-srcset="https://cimg3.ibsrv.net/ibimg/hgm/1920x1080-1/100/469/2015-volkswagen-golf_100469091.jpg 1920w, https://cimg3.ibsrv.net/ibimg/hgm/1200x675-1/100/469/2015-volkswagen-golf_100469091.jpg 1200w, https://cimg3.ibsrv.net/ibimg/hgm/600x338-1/100/469/2015-volkswagen-golf_100469091.jpg 600w" sizes="(max-width: 440px) 600px, calc(100vw - 2rem)">
+<div class="overlay no-gradient"></div>
+<div class="slide-info">
+<div class="bctb-article-title"><span>Volkswagen Golf: </span> Green Car Reports&rsquo; Best Car to Buy 2015</div>
+<div class="bctb-article-excerpt"><img class="quote" src="/images/quote.svg">Our Best Car To Buy award can go one of several ways here on Green Car Reports. Sometimes it goes...</div>
+<a class="red-button" href="/news/1095116_2015-volkswagen-golf-green-car-reports-best-car-to-buy-2015">Read Article</a>
+</div>
+</div>
+<div class="swiper-slide">
+<img class="lazy" data-id="100445726" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg2.ibsrv.net/ibimg/hgm/1600x900-1/100/445/2014-honda-accord-hybrid_100445726.jpg" alt="2014 Honda Accord Hybrid, Catskill Mountains, NY, Nov 2013" data-srcset="https://cimg2.ibsrv.net/ibimg/hgm/1600x900-1/100/445/2014-honda-accord-hybrid_100445726.jpg 1600w, https://cimg2.ibsrv.net/ibimg/hgm/1200x675-1/100/445/2014-honda-accord-hybrid_100445726.jpg 1200w, https://cimg2.ibsrv.net/ibimg/hgm/600x338-1/100/445/2014-honda-accord-hybrid_100445726.jpg 600w" sizes="(max-width: 440px) 600px, calc(100vw - 2rem)">
+<div class="overlay no-gradient"></div>
+<div class="slide-info">
+<div class="bctb-article-title"><span>Honda Accord: </span> Green Car Reports&rsquo; Best Car to Buy 2014</div>
+<div class="bctb-article-excerpt"><img class="quote" src="/images/quote.svg">For 2014, our fourth annual Green Car Reports' Best Car To Buy award goes to the 2014 Honda Accord...</div>
+<a class="red-button" href="/news/1088280_green-car-reports-best-car-to-buy-2014-honda-accord-hybrid">Read Article</a>
+</div>
+</div>
+<div class="swiper-slide">
+<img class="lazy" data-id="100412571" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg3.ibsrv.net/ibimg/hgm/1600x900-1/100/412/tesla-model-s_100412571.jpg" alt="2012 Tesla Model S" data-srcset="https://cimg3.ibsrv.net/ibimg/hgm/1600x900-1/100/412/tesla-model-s_100412571.jpg 1600w, https://cimg3.ibsrv.net/ibimg/hgm/1200x675-1/100/412/tesla-model-s_100412571.jpg 1200w, https://cimg3.ibsrv.net/ibimg/hgm/600x338-1/100/412/tesla-model-s_100412571.jpg 600w" sizes="(max-width: 440px) 600px, calc(100vw - 2rem)">
+<div class="overlay no-gradient"></div>
+<div class="slide-info">
+<div class="bctb-article-title"><span>Tesla Model S: </span> Green Car Reports&rsquo; Best Car to Buy 2013</div>
+<div class="bctb-article-excerpt"><img class="quote" src="/images/quote.svg">Two years ago, our first-ever Green Car Reports Best Car To Buy award went to the first modern...</div>
+<a class="red-button" href="/news/1080993_2013-tesla-model-s-green-car-reports-best-car-to-buy-2013">Read Article</a>
+</div>
+</div>
+<div class="swiper-slide">
+<img class="lazy" data-id="100350438" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg2.ibsrv.net/ibimg/hgm/1600x900-1/100/350/2012-toyota-prius_100350438.jpg" alt="2012 Toyota Prius V station wagon, Half Moon Bay, CA, May 2011" data-srcset="https://cimg2.ibsrv.net/ibimg/hgm/1600x900-1/100/350/2012-toyota-prius_100350438.jpg 1600w, https://cimg2.ibsrv.net/ibimg/hgm/1200x675-1/100/350/2012-toyota-prius_100350438.jpg 1200w, https://cimg2.ibsrv.net/ibimg/hgm/600x338-1/100/350/2012-toyota-prius_100350438.jpg 600w" sizes="(max-width: 440px) 600px, calc(100vw - 2rem)">
+<div class="overlay no-gradient"></div>
+<div class="slide-info">
+<div class="bctb-article-title"><span>Toyota Prius: </span> Green Car Reports&rsquo; Best Car to Buy 2012</div>
+<div class="bctb-article-excerpt"><img class="quote" src="/images/quote.svg">The late-night arguments are over, the statistical comparisons and product specs are put away, and...</div>
+<a class="red-button" href="/news/1069895_2012-toyota-prius-greencarreports-best-car-to-buy-2012">Read Article</a>
+</div>
+</div>
+<div class="swiper-slide">
+<img class="lazy" data-id="100327937" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 9 '%3E%3C/svg%3E" data-src="https://cimg1.ibsrv.net/ibimg/hgm/2000x1125-1/100/327/2011-nissan-leaf_100327937.jpg" alt="2011 Nissan Leaf " data-srcset="https://cimg1.ibsrv.net/ibimg/hgm/2000x1125-1/100/327/2011-nissan-leaf_100327937.jpg 2000w, https://cimg1.ibsrv.net/ibimg/hgm/1200x675-1/100/327/2011-nissan-leaf_100327937.jpg 1200w, https://cimg1.ibsrv.net/ibimg/hgm/600x338-1/100/327/2011-nissan-leaf_100327937.jpg 600w" sizes="(max-width: 440px) 600px, calc(100vw - 2rem)">
+<div class="overlay no-gradient"></div>
+<div class="slide-info">
+<div class="bctb-article-title"><span>Nissan Leaf: </span> Green Car Reports&rsquo; Best Car to Buy 2011</div>
+<div class="bctb-article-excerpt"><img class="quote" src="/images/quote.svg">It&rsquo;s been a long time coming. More than 80 years, in fact, since viable electric cars were...</div>
+<a class="red-button" href="/news/1051574_2011-nissan-leaf-greencarreports-best-car-to-buy-2011">Read Article</a>
+</div>
+</div>
+</div>
+<div class="swiper-pagination"></div>
+</div>
+</div>
+</div>
+<div class="adv-spacer">
+<div id="ad-a-7"></div>
+</div>
+</div>
+</div>
+<a href="#" class="footer-waypoint-anchor"></a>
+<footer>
+<div class="footer-content">
+<div class="footer-logo">
+<a href="/" title="Green Car Reports">
+<div class="logo-type"></div>
+</a>
+</div>
+<div class="footer-links">
+<div class="footer-link-section1 gcr">
+<div class="footer-link-section">
+<h4>News</h4>
+<ul>
+<li><a class="foot-link" href="/news/charging">Charging</a></li>
+<li><a class="foot-link" href="/news/mobility">Mobility</a></li>
+<li><a class="foot-link" href="/news/sustainability">Sustainability</a></li>
+<li><a class="foot-link" href="/news/gas-mileage">Gas Mileage </a></li>
+<li><a class="foot-link" href="/news/hybrid-cars">Hybrids</a></li>
+<li><a class="foot-link" href="/news/electric-cars">Electric Cars</a></li>
+<li><a class="foot-link" href="/news/alternative-fuels">Alt Fuels</a></li>
+<li><a class="foot-link" href="/news/diesel">Diesel Cars</a></li>
+<li><a class="foot-link" href="/news/features">Features</a></li>
+<li><a class="foot-link" href="/news">View All </a></li>
+</ul>
+</div>
+</div>
+<div class="footer-link-section2">
+<div class="footer-link-section">
+<h4>Media</h4>
+<ul>
+<li><a class="foot-link" href="/pictures">Photos</a></li>
+<li><a class="foot-link" href="/videos">Videos</a></li>
+</ul>
+</div>
+<div class="footer-link-section">
+<h4>RSS</h4>
+<ul>
+<li><a class="foot-link" href="/rss-feeds">All Feeds</a></li>
+<li><a class="foot-link" href="https://feeds.highgearmedia.com/?sites=GreenCarReports">Master Feed</a></li>
+<li><a class="foot-link" href="https://feeds.highgearmedia.com/?sites=GreenCarReports&amp;tags=news">News</a></li>
+<li><a class="foot-link" href="https://feeds.highgearmedia.com/?sites=GreenCarReports&amp;tags=first-drives">First Drives</a></li>
+<li><a class="foot-link" href="https://feeds.highgearmedia.com/?sites=GreenCarReports&amp;tags=electric-cars">Electric Cars</a></li>
+<li><a class="foot-link" href="https://feeds.highgearmedia.com/?sites=GreenCarReports&amp;tags=hybrid-cars">Hybrids</a></li>
+<li><a class="foot-link" href="https://feeds.highgearmedia.com/?sites=GreenCarReports&amp;tags=buying-guides">Guides</a></li>
+<li><a class="foot-link" href="https://feeds.highgearmedia.com/?sites=GreenCarReports&amp;tags=green-life">Green Life</a></li>
+</ul>
+</div>
+<div class="footer-link-section">
+<div>
+<h4>Company</h4>
+<ul>
+<li><a class="foot-link" href="/aboutus">About Us</a></li>
+<li><a class="foot-link" href="/aboutus#contact-us">Contact Us</a></li>
+<li><a class="foot-link" href="https://ibauto.tumblr.com/">Press</a></li>
+<li><a class="foot-link" href="https://www.internetbrands.com/ibterms/">Terms of Use</a></li>
+<li><a class="foot-link" href="https://www.internetbrands.com/ibterms/supplementalcarrelatedterms/">Disclaimer</a></li>
+<li><a class="foot-link" href="https://www.internetbrands.com/privacy/privacy-main.html">Privacy Policy</a></li>
+<li id="li-ib-dnsi"><a class="foot-link" href="https://mynt-test-privacy.my.onetrust.com/webform/ebe19500-bc8d-487f-9d89-98fde8b270e2/6345c7af-b8c5-4ee6-a6f7-9418a3fe079b">Do Not Sell or Share My Personal Information</a></li>
+<li><a id="ot-sdk" style="cursor:pointer;" class="ot-sdk-show-settings managepref">Manage Preferences</a></li>
+</ul>
+</div>
+<div class="footer-other-sites">
+<h4>Our Other Sites</h4>
+<ul>
+<li><a class="foot-link" href="https://www.thecarconnection.com/">The Car Connection</a></li>
+<li><a class="foot-link" href="https://www.motorauthority.com/">Motor Authority</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-social-app-btns">
+<section class="social">
+<div class="follow-us">
+<h3>Follow Us Today:</h3>
+<a class="social-btn" title="Like us on Facebook" href="https://www.facebook.com/GreenCarReports" target="_blank" onclick="hgm.socialFollow('Facebook', 'GreenCarReports'); return true;">
+<span class="fab fa-facebook-f"></span>
+</a>
+<a class="social-btn" title="Follow us on Twitter" href="https://www.twitter.com/GreenCarReports" target="_blank" onclick="hgm.socialFollow('Twitter', 'GreenCarReports'); return true;">
+<span class="fab fa-twitter"></span>
+</a>
+<a class="social-btn" title="Follow us on Instagram" href="https://www.instagram.com/greencarreports/" target="_blank" onclick="hgm.socialFollow('Instagram', 'greencarreports'); return true;">
+<span class="fab fa-instagram"></span>
+</a>
+<a class="social-btn" title="Subscribe to our YouTube channel" href="https://www.youtube.com/user/greencarreports" target="_blank" onclick="hgm.socialFollow('YouTube', 'greencarreports'); return true;">
+<span class="fab fa-youtube"></span>
+</a>
+<a class="social-btn" title="Follow us on Filpboard" href="https://www.flipboard.com/@GreenCarReports" target="_blank" onclick="hgm.socialFollow('Flipboard', 'GreenCarReports'); return true;">
+<span class="fab fa-flipboard"></span>
+</a>
+</div>
+</section>
+</div>
+</div>
+<div class="copyright">
+&copy; 2023 MH Sub I, LLC. All Rights Reserved.
+Stock photography by <a href="https://www.izmocars.com/">izmostock.</a>
+</div>
+</footer>
+<div class="adv-spacer bottom sticky">
+<div id="bottom-sticky"></div>
+</div>
+<div class="adv-body-shift  active "></div>
+<div class="nav-menu" data-menu="news">
+<div class="nav-menu-items 2">
+<div class="nav-menu-col nav-menu-col-news">
+<a href="/news/charging">Charging</a>
+<a href="/news/mobility">Mobility</a>
+<a href="/news/sustainability">Sustainability</a>
+</div>
+<div class="nav-menu-col nav-menu-col-news">
+<a href="/news/gas-mileage">Gas Mileage </a>
+<a href="/news/hybrid-cars">Hybrids</a>
+<a href="/news/electric-cars">Electric Cars</a>
+</div>
+<div class="nav-menu-col nav-menu-col-news">
+<a href="/news/alternative-fuels">Alt Fuels</a>
+<a href="/news/diesel">Diesel Cars</a>
+<a href="/news/features">Features</a>
+</div>
+<div class="nav-menu-col nav-menu-col-news">
+<a href="/news">View All </a>
+</div>
+</div>
+</div>
+<div class="nav-menu" data-menu="newsletter">
+<div class="nav-menu-items nav-signup">
+<div class="heading">Green Car Reports Newsletter</div>
+<div>Sign up to get the latest green car and environmental news, delivered to your inbox daily!</div>
+<form data-pos="navigation" class="newsletter-signup-form" action="/api/newsletter-subscribe" method="post">
+<input type="email" class="email" name="email" placeholder="Enter your email address…" required data-msg="Email is required">
+<button class="red-button newsletter-signup-btn" type="submit">Sign Up Today!</button>
+<div class="response_message"></div>
+</form>
+</div>
+<div class="signup-consent">I agree to receive emails from Green Car Reports. I understand that I can unsubscribe at any time. <a href="http://www.internetbrands.com/privacy/privacy-main.html" target="_blank">Privacy Policy.</a></div>
+</div>
+<div class="nav-menu nav-menu-search" data-menu="search" data-engine="652055e23533417e3" data-placeholder="Search Green Car Reports...">
+<div class="nav-search">
+<gcse:searchbox-only enablehistory="true" autocompletemaxcompletions="10" autocompletematchtype="any" resultsurl="/searchresults"></gcse:searchbox-only>
+</div>
+</div>
+<div class="device-nav">
+<a class="nav-link  cat-link " href="/news">News</a>
+<div class="nav-categories">
+<a href="/news/charging">Charging</a>
+<a href="/news/mobility">Mobility</a>
+<a href="/news/sustainability">Sustainability</a>
+<a href="/news/gas-mileage">Gas Mileage </a>
+<a href="/news/hybrid-cars">Hybrids</a>
+<a href="/news/electric-cars">Electric Cars</a>
+<a href="/news/alternative-fuels">Alt Fuels</a>
+<a href="/news/diesel">Diesel Cars</a>
+<a href="/news/features">Features</a>
+<a href="/news">View All </a>
+</div>
+<a class="nav-link " href="/news/first-drives">First Drives</a>
+<a class="nav-link " href="/news/electric-cars">Electric Cars</a>
+<a class="nav-link " href="/news/hybrid-cars">Hybrids</a>
+<a class="nav-link " href="/news/buying-guides">Guides</a>
+<a class="nav-link " href="/news/green-life">Green Life</a>
+<li class="mobile-newsletter">
+<div class="newsletter-wrapper">
+<div class="newsletter-title">Never Miss a Green Car Reports Story</div>
+<form class="newsletter-signup-form" action="/api/newsletter-subscribe" method="post">
+<input type="email" class="email" name="email" placeholder="Enter your email address…" required data-msg="Email is required">
+<div class="signup-consent">
+I agree to receive emails from Green Car Reports. I understand that I can unsubscribe at any time. <a href="http://www.internetbrands.com/privacy/privacy-main.html" target="_blank">Privacy Policy.</a>
+</div>
+<button class="red-button newsletter-signup-btn" type="submit">subscribe today</button>
+<div class="response_message"></div>
+</form>
+</div>
+</li>
+</div>
+<script>
+ window.addEventListener('DOMContentLoaded', function() {
+(function(){
+!function(){"use strict";new Swiper("#gallery-wrapper .swiper-container",{slidesPerView:3,slidesPerGroup:3,spaceBetween:0,breakpoints:{480:{slidesPerView:1,slidesPerGroup:1,spaceBetween:0},640:{slidesPerView:2,slidesPerGroup:2,spaceBetween:0}},pagination:{el:"#gallery-wrapper .swiper-counter",type:"custom",renderCustom:function(e,r,i){return"".concat(r,"/").concat(i)}},navigation:{nextEl:"#gallery-wrapper .swiper-next",prevEl:"#gallery-wrapper .swiper-prev"}}),new Swiper(".first-drive .swiper-container",{slidesPerView:2,slidesPerGroup:2,spaceBetween:15,height:625,direction:"vertical",navigation:{nextEl:"#first-drive-rail .swiper-next",prevEl:"#first-drive-rail .swiper-prev"}}),new Swiper("#latest-videos .swiper-container",{slidesPerView:1,slidesPerGroup:1,spaceBetween:0,pagination:{el:"#latest-videos .swiper-counter",type:"custom",renderCustom:function(e,r,i){return"".concat(r,"/").concat(i)}},navigation:{nextEl:"#latest-videos .swiper-next",prevEl:"#latest-videos .swiper-prev"}}),hgm.bindVideoPopup($(".popup-video")),new Swiper(".bctb-carousel .swiper-container",{slidesPerView:1,slidesPerGroup:1,spaceBetween:0,pagination:{el:".swiper-pagination",clickable:!0}})}();
+;
+hgmads.initFromDeferred();
+hgm.initSearch();
+hgm.initSearch();
+}());
+});
+</script>
+<script class="optanon-category-C0001" src="/js/footer-app-vendor.js?id=77d311017a7213ebabc07eafc0df07b9" defer></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"fcb635eb66","applicationID":"135926744","transactionName":"MgcAYUMDDUFWAkJaDAtNI1ZFCwxcGAlZXgY=","queueTime":0,"applicationTime":1001,"atts":"HkAXFwsZHh4VABQJGBgf","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
